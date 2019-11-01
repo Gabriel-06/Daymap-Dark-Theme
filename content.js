@@ -136,9 +136,9 @@ for (elt of dlgcontent) {
   elt.style['background-color'] = '#292929';
 }
 
-const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
-const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
-const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
+//const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
+//const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
+//const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
 
 const taskfinder = document.getElementsByClassName('lpMenuTd2');
 for (elt of taskfinder) {
@@ -192,6 +192,7 @@ for (elt of mobile_header) {
 }
 
 const mobile_logo = document.getElementsByClassName('logo')[1].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
+<<<<<<< HEAD
 /*// TODO:
 hyperlinks
 greyscale logos
@@ -201,3 +202,20 @@ profile menu
 profile menu mobile view
 hover over colors
 */
+=======
+
+console.log(document.getElementsByClassName('Period'));
+
+
+//calender stuff
+
+const period = document.getElementsByClassName('Period');
+for (elt of period) {
+  elt.style['backgroundColor'] = '#292929';
+}
+
+const planclass_bg = document.getElementsByClassName('PlanClass');
+for (elt of planclass_bg) {
+  elt.style['backgroundColor'] = '#292929';
+}
+>>>>>>> 145d42d17bd008c623058bc2081d686db50cdbc4
