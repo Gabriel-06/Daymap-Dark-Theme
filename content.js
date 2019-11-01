@@ -8,6 +8,7 @@ for (elt of card) {
   elt.style['background-color'] = '#292929';
   elt.style['border-width'] = '1px';
   elt.style['border-color'] = '#535353';
+  elt.style['padding-left'] = '10px';
 }
 
 const toolbar = document.getElementsByClassName('Toolbar');
@@ -34,7 +35,8 @@ for (elt of msg) {
   elt.style['background-color'] = '#3e3e3e';
   elt.style['color'] = '#e5e5e5';
   elt.style['border-color'] = '#515151';
-  elt.style['border-width'] = '1px';
+  elt.style['border-radius'] = '3px';
+  elt.style['border-width'] = '0px';
 }
 
 const text = document.getElementsByTagName('a');
@@ -77,8 +79,9 @@ for (elt of sn) {
 const tasks = document.getElementsByClassName('active itm');
 for (elt of tasks) {
   elt.style['background-color'] = '#3e3e3e';
-  elt.style['border-width'] = '1px';
-  elt.style['border-color'] = '#515151';
+  elt.style['padding'] = '5px';
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px'
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -148,7 +151,6 @@ for (elt of menuactive) {
 
 const logo = document.getElementsByClassName('logo')[2].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
 
-
 const captionr8 = document.getElementsByClassName('CaptionR8');
 for (elt of captionr8) {
   elt.style['color'] = '#e5e5e5';
@@ -157,6 +159,12 @@ for (elt of captionr8) {
 const hypertext = document.getElementsByClassName('dlgContent');
 for (elt of hypertext) {
   elt.style['background-color'] = '#292929';
+}
+
+const photothumb = document.getElementsByClassName('photoThumb');
+for (elt of photothumb) {
+  elt.style['border-radius'] = '4px';
+  elt.style['padding-right'] = '50px';
 }
 
 const week = document.getElementsByClassName('CE ditm');
@@ -168,13 +176,28 @@ for (elt of week) {
 const name_font = document.getElementsByClassName('sname');
 for (elt of name_font) {
   elt.style['font-family'] = "'Roboto', 'Helvetica Neue',Helvetica,Arial,sans-serif";
+  elt.style['padding-left'] = '2px';
+  elt.style['font-size'] = '1.3em';
+}
+
+const linklist = document.getElementsByClassName('linklist');
+for (elt of linklist) {
+  elt.style['font-size'] = '1em';
 }
 
 const mobile_header = document.getElementsByClassName('header-mobile');
 for (elt of mobile_header) {
   elt.style['background-color'] = '#292929';
+  elt.style['border-color'] = '#535353';
 }
 
 const mobile_logo = document.getElementsByClassName('logo')[1].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
-
-console.log(document.getElementsByClassName('logo'));
+/*// TODO:
+hyperlinks
+greyscale logos
+message icons
+attendence colors
+profile menu
+profile menu mobile view
+hover over colors
+*/
