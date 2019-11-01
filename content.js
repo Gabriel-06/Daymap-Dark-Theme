@@ -146,14 +146,13 @@ for (elt of menuactive) {
   elt.style['border-left'] = '0px';
 }
 
-const logo = document.getElementsByClassName('logo')[2].src = 'https://i1383.photobucket.com/albums/ah310/SDFHwg/ezgif-2-24d01c8b07de_zpselqs9mpo.png';
+const logo = document.getElementsByClassName('logo')[2].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
+
 
 const captionr8 = document.getElementsByClassName('CaptionR8');
 for (elt of captionr8) {
   elt.style['color'] = '#e5e5e5';
 }
-
-console.log(document.getElementsByClassName('gr__daymap_marryatvillehs_sa_edu_au'));
 
 const hypertext = document.getElementsByClassName('dlgContent');
 for (elt of hypertext) {
@@ -170,3 +169,12 @@ const name_font = document.getElementsByClassName('sname');
 for (elt of name_font) {
   elt.style['font-family'] = "'Roboto', 'Helvetica Neue',Helvetica,Arial,sans-serif";
 }
+
+const mobile_header = document.getElementsByClassName('header-mobile');
+for (elt of mobile_header) {
+  elt.style['background-color'] = '#292929';
+}
+
+const mobile_logo = document.getElementsByClassName('logo')[1].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
+
+console.log(document.getElementsByClassName('logo'));
