@@ -209,6 +209,7 @@ const mobile_header = document.getElementsByClassName('header-mobile');
 for (elt of mobile_header) {
   elt.style['background-color'] = '#292929';
   elt.style['border-color'] = '#535353';
+  elt.style['border-width'] = '0px'
 }
 
 console.log(document.getElementsByTagName('img'));
@@ -257,3 +258,13 @@ for (elt of msg_icons){
     elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
   }
 }
+
+var newStyles = document.createElement('style')
+document.head.append(newStyles)
+newStyles.innerHTML = " div.linklist a:hover { background-color: #000000; color: #ffffff; }"
+
+
+let css = document.createElement('style');
+css.type = 'text/css';
+css.appendChild(document.createTextNode(rule)); // Support for the rest
+document.getElementsByClassName("linklist")[0].appendChild(css);
