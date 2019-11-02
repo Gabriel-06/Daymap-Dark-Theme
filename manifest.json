@@ -9,7 +9,7 @@
         "http://daymap.marryatvillehs.sa.edu.au/*"
 
       ],
-      "js": ["content.js"]
+      "js": ["content col.js"]
     }
   ]
 }
