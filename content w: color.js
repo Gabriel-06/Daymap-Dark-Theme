@@ -18,12 +18,6 @@ for (elt of toolbar) {
   elt.style['border-color'] = '#515151';
 }
 
-const timetable = document.getElementsByClassName('L ditm');
-for (elt of timetable) {
-  elt.style['background-color'] = '#3e3e3e';
-  elt.style['border-color'] = '#666666';
-}
-
 const msgunread = document.getElementsByClassName('msg unread');
 for (elt of msgunread) {
   elt.style['background-color'] = '#3e3e3e';
@@ -66,11 +60,6 @@ for (elt of header) {
   elt.style['background-color'] = '#292929';
 }
 
-const btn = document.getElementsByClassName('btn');
-for (elt of btn) {
-  elt.style['background-color'] = '#7e7e7e';
-}
-
 const sn = document.getElementsByClassName('sn');
 for (elt of sn) {
   elt.style['color'] = '#acacac';
@@ -97,12 +86,7 @@ for (elt of title) {
 const postticker = document.getElementsByClassName('post-ticker');
 for (elt of postticker) {
   elt.style['boxShadow'] = 'none';
-  elt.style['background-color'] = '#666666';
-}
-
-const diaryDay = document.getElementsByClassName('diaryDay');
-for (elt of diaryDay) {
-  elt.style['background-color'] = '#7e7e7e';
+  elt.style['background-color'] = '#6D7A8B';
 }
 
 const headerr = document.getElementsByClassName('header');
@@ -168,7 +152,19 @@ for (elt of photothumb) {
 const week = document.getElementsByClassName('CE ditm');
 for (elt of week) {
   elt.style['background-color'] = '#3e3e3e';
-  elt.style['border-left-color'] = '#666666';
+  //elt.style['border-left-color'] = '#666666';
+  elt.style['border-left-color'] = '#6D7A8B';
+}
+
+const timetable = document.getElementsByClassName('L ditm');
+for (elt of timetable) {
+  elt.style['background-color'] = '#3e3e3e';
+  elt.style['border-color'] = '#6D7A8B';
+}
+
+const btn = document.getElementsByClassName('btn');
+for (elt of btn) {
+  elt.style['background-color'] = '#6D7A8B';
 }
 
 const name_font = document.getElementsByClassName('sname');
