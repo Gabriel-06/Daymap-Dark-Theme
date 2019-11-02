@@ -128,10 +128,6 @@ for (elt of dlgcontent) {
   elt.style['background-color'] = '#292929';
 }
 
-const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
-const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
-const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
-
 const taskfinder = document.getElementsByClassName('lpMenuTd2');
 for (elt of taskfinder) {
   elt.style['border-left'] = '0px';
@@ -205,8 +201,6 @@ attendence colors
 hover over colors
 */
 
-console.log(document.getElementsByTagName('img'));
-
 
 //calender stuff
 
@@ -252,12 +246,30 @@ for (elt of msg_icons){
   }
 }
 
-var newStyles = document.createElement('style')
-document.head.append(newStyles)
-newStyles.innerHTML = " div.linklist a:hover { background-color: #000000; color: #ffffff; }"
+const send_help = document.getElementsByTagName('td');
+for (elt of send_help) {
+  elt.style['backgroundColor'] = 'transparent';
+}
+
+const table_row_alt = document.getElementsByClassName('rgAltRow');
+for (elt of table_row_alt) {
+  elt.style['backgroundColor'] = '#292929';
+}
+
+const table_row = document.getElementsByClassName('rgRow');
+for (elt of table_row) {
+  elt.style['backgroundColor'] = '#29FF29';
+}
+
+const table_row_group = document.getElementsByClassName('rgGroupHeader');
+for (elt of table_row_group) {
+  elt.style['backgroundColor'] = '#FF2929';
+}
 
 
-let css = document.createElement('style');
-css.type = 'text/css';
-css.appendChild(document.createTextNode(rule)); // Support for the rest
-document.getElementsByClassName("linklist")[0].appendChild(css);
+console.log(document.getElementsByTagName('rgGroupHeader'));
+
+
+const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
+const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
+const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
