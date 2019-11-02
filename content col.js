@@ -6,7 +6,7 @@ for (elt of maintext) {
 const card = document.getElementsByClassName('card');
 for (elt of card) {
   elt.style['background-color'] = '#292929';
-  elt.style['border-width'] = '1px';
+  elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#535353';
   elt.style['padding-left'] = '10px';
 }
@@ -58,6 +58,7 @@ const header = document.getElementsByClassName('Header');
 for (elt of header) {
   elt.style['color'] = '#e5e5e5';
   elt.style['background-color'] = '#292929';
+  elt.style['border-width'] = '0px';
 }
 
 const sn = document.getElementsByClassName('sn');
@@ -70,7 +71,6 @@ for (elt of tasks) {
   elt.style['background-color'] = '#3e3e3e';
   elt.style['padding'] = '5px';
   elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -93,7 +93,7 @@ const headerr = document.getElementsByClassName('header');
 for (elt of headerr) {
   elt.style['color'] = '#e5e5e5';
   elt.style['background-color'] = '#292929';
-  elt.style['border-color'] = '#535353';
+  elt.style['border-width'] = '0px';
 }
 
 const menu = document.getElementById('mnu').getElementsByTagName('td');
@@ -183,6 +183,7 @@ const mobile_header = document.getElementsByClassName('header-mobile');
 for (elt of mobile_header) {
   elt.style['background-color'] = '#292929';
   elt.style['border-color'] = '#535353';
+  elt.style['border-width'] = '0px'
 }
 
 /*// TODO:
@@ -239,3 +240,13 @@ for (elt of msg_icons){
     elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
   }
 }
+
+var newStyles = document.createElement('style')
+document.head.append(newStyles)
+newStyles.innerHTML = " div.linklist a:hover { background-color: #000000; color: #ffffff; }"
+
+
+let css = document.createElement('style');
+css.type = 'text/css';
+css.appendChild(document.createTextNode(rule)); // Support for the rest
+document.getElementsByClassName("linklist")[0].appendChild(css);
