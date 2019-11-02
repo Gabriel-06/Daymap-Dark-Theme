@@ -16,7 +16,7 @@ const toolbar = document.getElementsByClassName('Toolbar');
 for (elt of toolbar) {
   elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#515151';
-  elt.style['border radius'] = '3px'
+  elt.style['border-radius'] = '3px'
   elt.style['background-color'] = '#343434';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
