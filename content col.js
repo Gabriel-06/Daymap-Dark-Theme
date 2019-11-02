@@ -1,3 +1,31 @@
+const $0dp = '#121212'
+const $1dp = '#1d1d1d'
+const $2dp = '#212020'
+const $3dp = '#222121'
+const $4dp = '#242323'
+const $6dp = '#282726'
+const $8dp = '#292828'
+const $12dp = '#2d2c2c'
+const $16dp = '#2e2c2c'
+const $24dp = '#302f2f'
+
+const $1dp_shadow = '0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12)'
+const $2dp_shadow = '0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)'
+const $3dp_shadow = '0px 1px 8px 0px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 3px 3px -2px rgba(0, 0, 0, 0.12)'
+const $4dp_shadow = '0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)'
+const $6dp_shadow = '0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12)'
+const $8dp_shadow = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)'
+const $12dp_shadow = '0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12)'
+const $16dp_shadow = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)'
+const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12)'
+
+const primary_dark = '#006fa7'
+
+const send_help = document.getElementsByTagName('td');
+for (elt of send_help) {
+  elt.style['backgroundColor'] = 'transparent';
+}
+
 const maintext = document.getElementsByTagName('div');
 for (elt of maintext) {
   elt.style['color'] = '#FFF';
@@ -5,37 +33,34 @@ for (elt of maintext) {
 
 const card = document.getElementsByClassName('card');
 for (elt of card) {
-  elt.style['background-color'] = '#2e2e2e';
+  elt.style['background-color'] = $1dp;
   elt.style['border-width'] = '0px';
-  elt.style['border-color'] = '#535353';
   elt.style['padding-left'] = '10px';
-  elt.style['box-shadow'] = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)';
+  elt.style['box-shadow'] = $1dp_shadow;
 }
 
 const toolbar = document.getElementsByClassName('Toolbar');
 for (elt of toolbar) {
   elt.style['border-width'] = '0px';
-  elt.style['border-color'] = '#515151';
   elt.style['border-radius'] = '3px'
-  elt.style['background-color'] = '#343434';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $4dp_shadow;
 }
 
 const msgunread = document.getElementsByClassName('msg unread');
 for (elt of msgunread) {
   elt.style['color'] = '#e5e5e5';
-  elt.style['background-color'] = '#343434';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
 }
 
 const msg = document.getElementsByClassName('msg');
 for (elt of msg) {
-  elt.style['background-color'] = '#3e3e3e';
+  elt.style['background-color'] = $6dp;
   elt.style['color'] = '#e5e5e5';
   elt.style['border-radius'] = '3px';
   elt.style['border-width'] = '0px';
-  elt.style['background-color'] = '#343434';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const text = document.getElementsByTagName('a');
@@ -57,6 +82,7 @@ for (elt of search) {
 const caption = document.getElementsByClassName('Caption');
 for (elt of caption) {
   elt.style['color'] = '#e5e5e5';
+  elt.style['padding-top'] = "0px";
 }
 
 const header = document.getElementsByClassName('Header');
@@ -68,15 +94,6 @@ for (elt of header) {
 const sn = document.getElementsByClassName('sn');
 for (elt of sn) {
   elt.style['color'] = '#acacac';
-}
-
-const tasks = document.getElementsByClassName('active itm');
-for (elt of tasks) {
-  elt.style['padding'] = '5px';
-  elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
-  elt.style['background-color'] = '#343434';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -92,15 +109,15 @@ for (elt of title) {
 const postticker = document.getElementsByClassName('post-ticker');
 for (elt of postticker) {
   elt.style['boxShadow'] = 'none';
-  elt.style['background-color'] = '#6D7A8B';
+  elt.style['background-color'] = primary_dark;
 }
 
 const headerr = document.getElementsByClassName('header');
 for (elt of headerr) {
   elt.style['color'] = '#e5e5e5';
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = $1dp;
   elt.style['border-color'] = '#535353';
-  elt.style['box-shadow'] = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)';
+  elt.style['box-shadow'] = $1dp_shadow;
   elt.style['border-width'] = '0px';
 }
 
@@ -111,7 +128,7 @@ for (elt of menu) {
     elt.style['color'] = '#FFF'
 }
 
-const body = document.getElementById('mainBody').style.backgroundColor = '#121212';
+const body = document.getElementById('mainBody').style.backgroundColor = $0dp;
 
 const attendance = document.getElementsByClassName('sdIndicator');
 for (elt of attendance) {
@@ -151,27 +168,29 @@ const photothumb = document.getElementsByClassName('photoThumb');
 for (elt of photothumb) {
   elt.style['border-radius'] = '3px';
   elt.style['padding-right'] = '50px';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['box-shadow'] = $1dp_shadow;
 }
 
 const week = document.getElementsByClassName('CE ditm');
 for (elt of week) {
-  elt.style['background-color'] = '#3e3e3e';
-  //elt.style['border-left-color'] = '#666666';
-  elt.style['border-left-color'] = '#6D7A8B';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['border-radius'] = '3px'
+  elt.style['border-color'] = primary_dark;
 }
 
 const timetable = document.getElementsByClassName('L ditm');
 for (elt of timetable) {
-  elt.style['border-color'] = '#6D7A8B';
+  elt.style['border-color'] = primary_dark;
   elt.style['border-radius'] = '3px'
-  elt.style['background-color'] = '#343434';
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const btn = document.getElementsByClassName('btn');
 for (elt of btn) {
-  elt.style['background-color'] = '#6D7A8B';
+  elt.style['background-color'] = primary_dark;
+  elt.style['box-shadow'] = $4dp_shadow
 }
 
 const name_font = document.getElementsByClassName('sname');
@@ -246,30 +265,43 @@ for (elt of msg_icons){
   }
 }
 
-const send_help = document.getElementsByTagName('td');
-for (elt of send_help) {
-  elt.style['backgroundColor'] = 'transparent';
-}
-
-const table_row_alt = document.getElementsByClassName('rgAltRow');
-for (elt of table_row_alt) {
-  elt.style['backgroundColor'] = '#292929';
+const table_row_group = document.getElementsByClassName('rgGroupHeader');
+for (elt of table_row_group) {
+  elt.style['backgroundColor'] = '#212020';
+  elt.style['box-shadow'] = '0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)';
 }
 
 const table_row = document.getElementsByClassName('rgRow');
 for (elt of table_row) {
-  elt.style['backgroundColor'] = '#29FF29';
+  elt.style['backgroundColor'] = '#242323';
 }
 
-const table_row_group = document.getElementsByClassName('rgGroupHeader');
-for (elt of table_row_group) {
-  elt.style['backgroundColor'] = '#FF2929';
+const table_row_alt = document.getElementsByClassName('rgAltRow');
+for (elt of table_row_alt) {
+  elt.style['backgroundColor'] = '#222121';
 }
 
+const table_header = document.getElementsByClassName('rgHeader');
+for (elt of table_header) {
+  elt.style['backgroundColor'] = '#006fa7';
+}
 
-console.log(document.getElementsByTagName('rgGroupHeader'));
+const tasks = document.getElementsByClassName('active itm');
+for (elt of tasks) {
+  elt.style['padding'] = '5px';
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px'
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+}
 
+const diaryDay = document.getElementsByClassName('diaryDay');
+for (elt of diaryDay) {
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px'
+  elt.style['background-color'] = primary_dark;
+  elt.style['box-shadow'] = $1dp_shadow;
+}
 
-const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
 const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
 const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
