@@ -9,6 +9,7 @@ for (elt of card) {
   elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#535353';
   elt.style['padding-left'] = '10px';
+  elt.style['border-radius'] = '4px'
   elt.style['box-shadow'] = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)';
 }
 
@@ -16,7 +17,7 @@ const toolbar = document.getElementsByClassName('Toolbar');
 for (elt of toolbar) {
   elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#515151';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '4px'
   elt.style['background-color'] = '#343434';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
@@ -32,7 +33,7 @@ const msg = document.getElementsByClassName('msg');
 for (elt of msg) {
   elt.style['background-color'] = '#3e3e3e';
   elt.style['color'] = '#e5e5e5';
-  elt.style['border-radius'] = '3px';
+  elt.style['border-radius'] = '4px';
   elt.style['border-width'] = '0px';
   elt.style['background-color'] = '#343434';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
@@ -74,7 +75,7 @@ const tasks = document.getElementsByClassName('active itm');
 for (elt of tasks) {
   elt.style['padding'] = '5px';
   elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '4px'
   elt.style['background-color'] = '#343434';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
@@ -93,6 +94,7 @@ const postticker = document.getElementsByClassName('post-ticker');
 for (elt of postticker) {
   elt.style['boxShadow'] = 'none';
   elt.style['background-color'] = '#6D7A8B';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const headerr = document.getElementsByClassName('header');
@@ -153,7 +155,7 @@ for (elt of hypertext) {
 
 const photothumb = document.getElementsByClassName('photoThumb');
 for (elt of photothumb) {
-  elt.style['border-radius'] = '3px';
+  elt.style['border-radius'] = '4px';
   elt.style['padding-right'] = '50px';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
@@ -168,9 +170,15 @@ for (elt of week) {
 const timetable = document.getElementsByClassName('L ditm');
 for (elt of timetable) {
   elt.style['border-color'] = '#6D7A8B';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '4px'
   elt.style['background-color'] = '#343434';
   elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+}
+
+const diaryday = document.getElementsByClassName('diaryDay');
+for (elt of diaryday) {
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
+  elt.style['border-radius'] = '4px';
 }
 
 const btn = document.getElementsByClassName('btn');
