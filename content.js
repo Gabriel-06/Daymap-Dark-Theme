@@ -55,9 +55,15 @@ for (elt of search) {
   elt.style['border-color'] = '#ccc';
 }
 
+const datepicker = document.getElementsByClassName('date-picker');
+for (elt of datepicker) {
+  elt.style['padding-top'] = '0px';
+}
+
 const caption = document.getElementsByClassName('Caption');
 for (elt of caption) {
   elt.style['color'] = '#e5e5e5';
+  elt.style['padding-top'] = '0px';
 }
 
 const header = document.getElementsByClassName('Header');
@@ -119,7 +125,9 @@ for (elt of menu) {
     elt.style['color'] = '#FFF'
 }
 
-const body = document.getElementById('mainBody').style.backgroundColor = '#3e3e3e';
+const bruh = document.getElementsByTagName('td')[18].style['padding-top'] = '0px';
+
+const body = document.getElementById('mainBody').style['backgroundColor'] = '#121212';
 
 const attendance = document.getElementsByClassName('sdIndicator');
 for (elt of attendance) {
@@ -165,6 +173,13 @@ for (elt of photothumb) {
   elt.style['padding-right'] = '50px';
 }
 
+const calimg = document.getElementsByClassName('CalImg');
+for (elt of calimg) {
+  elt.style['padding-left'] = '10px';
+  elt.style['padding-right'] = '9px';
+  elt.style['padding-top'] = '0px';
+}
+
 const week = document.getElementsByClassName('CE ditm');
 for (elt of week) {
   elt.style['background-color'] = '#3e3e3e';
@@ -188,6 +203,7 @@ for (elt of mobile_header) {
   elt.style['background-color'] = '#292929';
   elt.style['border-color'] = '#535353';
 }
+
 
 /*// TODO:
 hyperlinks
