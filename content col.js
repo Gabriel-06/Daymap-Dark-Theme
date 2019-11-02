@@ -5,32 +5,37 @@ for (elt of maintext) {
 
 const card = document.getElementsByClassName('card');
 for (elt of card) {
-  elt.style['background-color'] = '#2c2c2c';
-  elt.style['border-width'] = '1px';
+  elt.style['background-color'] = '#2e2e2e';
+  elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#535353';
   elt.style['padding-left'] = '10px';
+  elt.style['box-shadow'] = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)';
 }
 
 const toolbar = document.getElementsByClassName('Toolbar');
 for (elt of toolbar) {
-  elt.style['background-color'] = '#3e3e3e';
-  elt.style['border-width'] = '1px';
+  elt.style['border-width'] = '0px';
   elt.style['border-color'] = '#515151';
+  elt.style['border radius'] = '3px'
+  elt.style['background-color'] = '#343434';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const msgunread = document.getElementsByClassName('msg unread');
 for (elt of msgunread) {
-  elt.style['background-color'] = '#3e3e3e';
   elt.style['color'] = '#e5e5e5';
+  elt.style['background-color'] = '#343434';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const msg = document.getElementsByClassName('msg');
 for (elt of msg) {
   elt.style['background-color'] = '#3e3e3e';
   elt.style['color'] = '#e5e5e5';
-  elt.style['border-color'] = '#515151';
   elt.style['border-radius'] = '3px';
   elt.style['border-width'] = '0px';
+  elt.style['background-color'] = '#343434';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const text = document.getElementsByTagName('a');
@@ -57,7 +62,7 @@ for (elt of caption) {
 const header = document.getElementsByClassName('Header');
 for (elt of header) {
   elt.style['color'] = '#e5e5e5';
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = 'transparent';
 }
 
 const sn = document.getElementsByClassName('sn');
@@ -67,10 +72,11 @@ for (elt of sn) {
 
 const tasks = document.getElementsByClassName('active itm');
 for (elt of tasks) {
-  elt.style['background-color'] = '#3e3e3e';
   elt.style['padding'] = '5px';
   elt.style['border-width'] = '0px';
   elt.style['border-radius'] = '3px'
+  elt.style['background-color'] = '#343434';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -94,6 +100,8 @@ for (elt of headerr) {
   elt.style['color'] = '#e5e5e5';
   elt.style['background-color'] = '#292929';
   elt.style['border-color'] = '#535353';
+  elt.style['box-shadow'] = '0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12)';
+  elt.style['border-width'] = '0px';
 }
 
 const menu = document.getElementById('mnu').getElementsByTagName('td');
@@ -145,8 +153,9 @@ for (elt of hypertext) {
 
 const photothumb = document.getElementsByClassName('photoThumb');
 for (elt of photothumb) {
-  elt.style['border-radius'] = '4px';
+  elt.style['border-radius'] = '3px';
   elt.style['padding-right'] = '50px';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const week = document.getElementsByClassName('CE ditm');
@@ -158,8 +167,10 @@ for (elt of week) {
 
 const timetable = document.getElementsByClassName('L ditm');
 for (elt of timetable) {
-  elt.style['background-color'] = '#3e3e3e';
   elt.style['border-color'] = '#6D7A8B';
+  elt.style['border-radius'] = '3px'
+  elt.style['background-color'] = '#343434';
+  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
 }
 
 const btn = document.getElementsByClassName('btn');
