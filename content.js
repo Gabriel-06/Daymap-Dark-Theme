@@ -192,7 +192,6 @@ for (elt of mobile_header) {
 }
 
 const mobile_logo = document.getElementsByClassName('logo')[1].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
-<<<<<<< HEAD
 /*// TODO:
 hyperlinks
 greyscale logos
@@ -202,12 +201,24 @@ profile menu
 profile menu mobile view
 hover over colors
 */
-=======
 
-console.log(document.getElementsByClassName('Period'));
+console.log(document.getElementsByTagName('a'));
 
 
 //calender stuff
+
+const profile_menu = document.getElementsByClassName('menu-label');
+for (elt of profile_menu) {
+  elt.style['color'] = '#000000';
+}
+
+const profile_menu_sign_out = document.getElementsByTagName('a')[11].style['color'] = '#000000';
+const profile_menu_my_details = document.getElementsByTagName('a')[12].style['color'] = '#000000';
+const profile_menu_switch_user = document.getElementsByTagName('a')[13].style['color'] = '#000000';
+
+const mobile_profile_menu_sign_out = document.getElementsByTagName('a')[5].style['color'] = '#000000';
+const mobile_profile_menu_my_details = document.getElementsByTagName('a')[6].style['color'] = '#000000';
+const mobile_profile_menu_switch_user = document.getElementsByTagName('a')[7].style['color'] = '#000000';
 
 const period = document.getElementsByClassName('Period');
 for (elt of period) {
@@ -218,4 +229,3 @@ const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
   elt.style['backgroundColor'] = '#292929';
 }
->>>>>>> 145d42d17bd008c623058bc2081d686db50cdbc4
