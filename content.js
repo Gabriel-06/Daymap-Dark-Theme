@@ -96,7 +96,6 @@ for (elt of title) {
 
 const postticker = document.getElementsByClassName('post-ticker');
 for (elt of postticker) {
-  elt.style['background-color'] = '#7e7e7e';
   elt.style['boxShadow'] = 'none';
 }
 
@@ -136,9 +135,9 @@ for (elt of dlgcontent) {
   elt.style['background-color'] = '#292929';
 }
 
-//const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
-//const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
-//const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
+const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
+const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
+const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
 
 const taskfinder = document.getElementsByClassName('lpMenuTd2');
 for (elt of taskfinder) {
@@ -148,8 +147,6 @@ const menuactive = document.getElementsByClassName('lpMenuTop active');
 for (elt of menuactive) {
   elt.style['border-left'] = '0px';
 }
-
-const logo = document.getElementsByClassName('logo')[2].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
 
 const captionr8 = document.getElementsByClassName('CaptionR8');
 for (elt of captionr8) {
@@ -191,18 +188,15 @@ for (elt of mobile_header) {
   elt.style['border-color'] = '#535353';
 }
 
-const mobile_logo = document.getElementsByClassName('logo')[1].src = 'https://i.ibb.co/SR4c9fT/logo-trans.png';
 /*// TODO:
 hyperlinks
 greyscale logos
 message icons
 attendence colors
-profile menu
-profile menu mobile view
 hover over colors
 */
 
-console.log(document.getElementsByTagName('a'));
+console.log(document.getElementsByTagName('img'));
 
 
 //calender stuff
@@ -228,4 +222,24 @@ for (elt of period) {
 const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
   elt.style['backgroundColor'] = '#292929';
+}
+
+const msg_icons = document.getElementsByTagName('img');
+for (elt of msg_icons){
+  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/post32.png"){
+    elt.src = "https://i.ibb.co/fFRPCnk/post32.png"
+  }
+  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/msg32.png"){
+    elt.src = "https://i.ibb.co/G2gzBV8/msg32.png"
+  }
+  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/chat.png"){
+    elt.src = "https://i.ibb.co/LxXS7Jp/chat.png"
+  }
+  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/dtbFlat.png"){
+    elt.src = "https://i.ibb.co/4jLbP5P/calendar.png"
+  }
+  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/daymap/images/daymap-text-logo-web.gif"){
+    elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
+  }
+
 }
