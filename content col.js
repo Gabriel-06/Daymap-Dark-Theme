@@ -1,3 +1,10 @@
+/*// TODO:
+hyperlinks
+message icons
+attendence colors
+hover over colors
+*/
+
 const maintext = document.getElementsByTagName('div');
 for (elt of maintext) {
   elt.style['color'] = '#FFF';
@@ -203,14 +210,6 @@ for (elt of mobile_header) {
   elt.style['background-color'] = '#292929';
   elt.style['border-color'] = '#535353';
 }
-
-/*// TODO:
-hyperlinks
-greyscale logos
-message icons
-attendence colors
-hover over colors
-*/
 
 console.log(document.getElementsByTagName('img'));
 
