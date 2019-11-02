@@ -5,7 +5,7 @@ for (elt of maintext) {
 
 const card = document.getElementsByClassName('card');
 for (elt of card) {
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = '#2c2c2c';
   elt.style['border-width'] = '1px';
   elt.style['border-color'] = '#535353';
   elt.style['padding-left'] = '10px';
@@ -103,7 +103,7 @@ for (elt of menu) {
     elt.style['color'] = '#FFF'
 }
 
-const body = document.getElementById('mainBody').style.backgroundColor = '#3e3e3e';
+const body = document.getElementById('mainBody').style.backgroundColor = '#121212';
 
 const attendance = document.getElementsByClassName('sdIndicator');
 for (elt of attendance) {
