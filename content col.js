@@ -138,10 +138,6 @@ for (elt of dlgcontent) {
   elt.style['background-color'] = '#292929';
 }
 
-const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
-const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
-const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
-
 const taskfinder = document.getElementsByClassName('lpMenuTd2');
 for (elt of taskfinder) {
   elt.style['border-left'] = '0px';
@@ -212,7 +208,17 @@ for (elt of mobile_header) {
   elt.style['border-color'] = '#535353';
 }
 
+<<<<<<< HEAD
 console.log(document.getElementsByTagName('img'));
+=======
+/*// TODO:
+hyperlinks
+greyscale logos
+message icons
+attendence colors
+hover over colors
+*/
+>>>>>>> 71066a5102d8cbb0f04131197601125a49b2cb9e
 
 
 //calender stuff
@@ -258,3 +264,34 @@ for (elt of msg_icons){
     elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
   }
 }
+<<<<<<< HEAD
+=======
+
+const send_help = document.getElementsByTagName('td');
+for (elt of send_help) {
+  elt.style['backgroundColor'] = 'transparent';
+}
+
+const table_row_alt = document.getElementsByClassName('rgAltRow');
+for (elt of table_row_alt) {
+  elt.style['backgroundColor'] = '#292929';
+}
+
+const table_row = document.getElementsByClassName('rgRow');
+for (elt of table_row) {
+  elt.style['backgroundColor'] = '#29FF29';
+}
+
+const table_row_group = document.getElementsByClassName('rgGroupHeader');
+for (elt of table_row_group) {
+  elt.style['backgroundColor'] = '#FF2929';
+}
+
+
+console.log(document.getElementsByTagName('rgGroupHeader'));
+
+
+const msgshadow = document.getElementById('btnMsgs').style.boxShadow = 'none';
+const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
+const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
+>>>>>>> 71066a5102d8cbb0f04131197601125a49b2cb9e
