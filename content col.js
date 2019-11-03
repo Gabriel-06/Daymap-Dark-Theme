@@ -142,7 +142,7 @@ for (elt of mdi) {
 
 const dlgcontent = document.getElementsByClassName('dlgContent');
 for (elt of dlgcontent) {
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = $8dp;
 }
 
 const taskfinder = document.getElementsByClassName('lpMenuTd2');
@@ -161,7 +161,7 @@ for (elt of captionr8) {
 
 const hypertext = document.getElementsByClassName('dlgContent');
 for (elt of hypertext) {
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = $8dp;
 }
 
 const photothumb = document.getElementsByClassName('photoThumb');
@@ -207,7 +207,7 @@ for (elt of linklist) {
 
 const mobile_header = document.getElementsByClassName('header-mobile');
 for (elt of mobile_header) {
-  elt.style['background-color'] = '#292929';
+  elt.style['background-color'] = $8dp;
   elt.style['border-color'] = '#535353';
   elt.style['border-width'] = '0px'
 }
@@ -238,12 +238,13 @@ const mobile_profile_menu_switch_user = document.getElementsByTagName('a')[7].st
 
 const period = document.getElementsByClassName('Period');
 for (elt of period) {
-  elt.style['backgroundColor'] = '#292929';
+  elt.style['backgroundColor'] = $8dp;
+  elt.style['color'] = '#e5e5e5'
 }
 
 const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
-  elt.style['backgroundColor'] = '#292929';
+  elt.style['backgroundColor'] = $8dp;
 }
 
 const msg_icons = document.getElementsByTagName('img');
@@ -302,6 +303,62 @@ for (elt of diaryDay) {
   elt.style['background-color'] = primary_dark;
   elt.style['box-shadow'] = $1dp_shadow;
 }
+
+const itm = document.getElementsByClassName('itm');
+for (elt of itm) {
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px'
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+}
+
+const lp = document.getElementsByClassName('lp');
+for (elt of lp) {
+  elt.style['border-width'] = '0px';
+  elt.style['background-color'] = $6dp;
+}
+
+const head = document.getElementsByClassName('head');
+for (elt of head) {
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+  elt.style['background-color'] = primary_dark;
+}
+
+const badge = document.getElementsByClassName('Badge');
+for (elt of badge) {
+  elt.style['border-width'] = '0px';
+  elt.style['background-color'] = primary_dark;
+}
+
+const tabContentW = document.getElementsByClassName('tabContentW');
+for (elt of tabContentW) {
+  elt.style['border-width'] = '0px';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow
+}
+
+const fbox = document.getElementsByClassName('fbox');
+for (elt of fbox) {
+  elt.style['border-width'] = '0px';
+}
+
+const viewPort = document.getElementsByClassName('viewPort');
+for (elt of viewPort) {
+  elt.style['border-width'] = '0px';
+}
+
+const tblTt = document.getElementById('tblTt').getElementsByTagName('th')
+for (elt of tblTt) {
+  elt.style['background-color'] = $6dp;
+}
+
+const ui_stuff = document.getElementsByClassName('ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget');
+for (elt of ui_stuff) {
+  elt.style['background'] = primary_dark;
+  elt.style['color'] = '#e5e5e5'
+}
+
 
 const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
 const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
