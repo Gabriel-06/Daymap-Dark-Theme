@@ -186,12 +186,6 @@ for (elt of timetable) {
   elt.style['box-shadow'] = $6dp_shadow;
 }
 
-const diaryday = document.getElementsByClassName('diaryDay');
-for (elt of diaryday) {
-  elt.style['box-shadow'] = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12)';
-  elt.style['border-radius'] = '4px';
-}
-
 const btn = document.getElementsByClassName('btn');
 for (elt of btn) {
   elt.style['background-color'] = primary_dark;
@@ -307,14 +301,6 @@ for (elt of tasks) {
   elt.style['background-color'] = $6dp;
   elt.style['box-shadow'] = $6dp_shadow;
   elt.style['color'] = text_color
-}
-
-const diaryDay = document.getElementsByClassName('diaryDay');
-for (elt of diaryDay) {
-  elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px';
-  elt.style['background-color'] = primary_dark;
-  elt.style['box-shadow'] = $1dp_shadow;
 }
 
 const itm = document.getElementsByClassName('itm');
@@ -461,6 +447,14 @@ for (elt of rgGroupItem) {
   elt.style['background-color'] = primary_dark;
 }
 
+const divDiaryDay = document.getElementById('divDiaryDay');
+if(divDiaryDay != null){
+  divDiaryDay.style['background-color'] = $6dp;
+  divDiaryDay.style['box-shadow'] = $4dp_shadow
+  divDiaryDay.style['border-radius'] = '3px';
+  divDiaryDay.style['margin-top'] = '20px';
+}
+
 
 
 addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
@@ -502,3 +496,23 @@ addCss('table.feed div.head {background-color: ' + primary_dark + ' !important;}
 addCss('.Caption, .CaptionR8 {color: ' + text_color + ' !important;}')
 
 addCss('.Error {color: ' + error_color + ' !important;}')
+
+addCss('td.diaryEvents {background-color: ' + $1dp + ' !important; border-bottom: 3px solid ' + primary_dark + ' !important;}')
+
+addCss('div.diaryDay {background-color: ' + primary_dark + ' !important; border-width: 0px !important; border-radius: 3px; box-shadow: ' + $1dp_shadow + ' !important;}')
+
+addCss('td.diaryDay {background-color: ' + primary_dark + ' !important; border-width: 0px !important; box-shadow: ' + $1dp_shadow + ' !important; color: ' + text_color + ' !important;}')
+
+addCss('td.diaryDay:hover { background-color: '+ primary_dark + ' !important;}')
+
+addCss('td.diaryDay:hover div { background-color: '+ primary_dark + ' !important;}')
+
+addCss('div.diaryDayLabel { color: '+ text_color + ' !important;}')
+
+addCss('div.diaryDayLabelSmall { color: '+ text_color + ' !important;}')
+
+addCss('div.diaryCnt {border: 0px solid #1073CE !important; border-radius: 3px !important;}')
+
+addCss('div.diary div.ditm {background-color: ' + $6dp + ' !important;}')
+
+addCss('.c a {color: ' + text_color + ' !important;}')
