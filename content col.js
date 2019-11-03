@@ -41,6 +41,8 @@ for (elt of maintext) {
   elt.style['color'] = '#FFF';
 }
 
+const calenderthing = document.getElementsByTagName('td')[18].style['padding-top'] = '0px';
+
 const card = document.getElementsByClassName('card');
 for (elt of card) {
   elt.style['background-color'] = $1dp;
@@ -240,7 +242,7 @@ const mobile_profile_menu_switch_user = document.getElementsByTagName('a')[7].st
 
 const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
-  elt.style['backgroundColor'] = $8dp;
+  elt.style['background-color'] = $8dp;
 }
 
 const msg_icons = document.getElementsByTagName('img');
@@ -259,6 +261,26 @@ for (elt of table_row_group) {
   elt.style['box-shadow'] = $24dp_shadow;
 }
 
+const rgroupitem = document.getElementsByClassName('rgGroupItem');
+for (elt of rgroupitem) {
+  elt.style['border-radius'] = '4px';
+  elt.style['box-shadow'] = $3dp_shadow;
+}
+
+const rgmaster = document.getElementById('cp_cp_grdAssignments_ctl00');
+if (rgmaster != null){
+  rgmaster.style.boxShadow = $1dp_shadow;
+}
+
+const ddlView = document.getElementById('ddlView');
+if (ddlView != null){
+  ddlView.style.boxShadow = $1dp_shadow;
+  ddlView.style.borderWidth = '0px';
+  ddlView.style.backgroundColor = $24dp;
+  ddlView.style.color = '#FFF';
+  ddlView.style.paddingTop = '7px';
+}
+
 const table_row = document.getElementsByClassName('rgRow');
 for (elt of table_row) {
   elt.style['background-color'] = $6dp;
@@ -274,7 +296,6 @@ for (elt of table_row_alt) {
 const table_header = document.getElementsByClassName('rgHeader');
 for (elt of table_header) {
   elt.style['background-color'] = primary_dark;
-  elt.style['box-shadow'] = $4dp_shadow;
 }
 
 const tasks = document.getElementsByClassName('active itm');
@@ -389,6 +410,14 @@ if (diaryshadow != null){
 const calendarshadows = document.getElementById('bCalendar');
 if (calendarshadows != null){
   calendarshadows.style.boxShadow = 'none';
+}
+
+const cp_dtbDate = document.getElementById('cp_dtbDate');
+if (cp_dtbDate != null){
+  cp_dtbDate.style.boxShadow = $1dp_shadow;
+  cp_dtbDate.style.color = '#FFF';
+  cp_dtbDate.style.backgroundColor = $24dp;
+  cp_dtbDate.style.borderWidth = '0px';
 }
 
 const period = document.getElementsByClassName('Period');
