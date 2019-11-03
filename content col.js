@@ -237,12 +237,6 @@ const mobile_profile_menu_sign_out = document.getElementsByTagName('a')[5].style
 const mobile_profile_menu_my_details = document.getElementsByTagName('a')[6].style['color'] = '#000000';
 const mobile_profile_menu_switch_user = document.getElementsByTagName('a')[7].style['color'] = '#000000';
 
-const period = document.getElementsByClassName('Period');
-for (elt of period) {
-  elt.style['backgroundColor'] = $8dp;
-  elt.style['color'] = text_color;
-}
-
 const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
   elt.style['backgroundColor'] = $8dp;
@@ -260,7 +254,7 @@ for (elt of msg_icons){
     elt.src = "https://i.ibb.co/LxXS7Jp/chat.png"
   }
   if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/dtbFlat.png"){
-    elt.src = "https://i.ibb.co/4jLbP5P/calendar.png"
+    elt.src = "https://i.ibb.co/YhHs16d/calendar.png"
   }
   if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/daymap/images/daymap-text-logo-web.gif"){
     elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
@@ -363,6 +357,15 @@ for (elt of box) {
   elt.style['border-width'] = '0px';
 }
 
+const tabsCnt = document.getElementsByClassName('TabsCnt');
+for (elt of tabsCnt) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
+}
+
+
+
 const labelr = document.getElementsByClassName('LabelR');
 for (elt of labelr) {
   elt.style['color'] = text_color;
@@ -382,14 +385,6 @@ if (cp != null){
   }
 }
 
-const tblTt = document.getElementById('tblTt');
-if (tblTt != null){
-  for (elt of tblTt.getElementsByTagName('th')) {
-    elt.style['background-color'] = $6dp;
-  }
-}
-
-
 
 const diaryshadow = document.getElementById('btnDiary');
 if (diaryshadow != null){
@@ -399,4 +394,17 @@ if (diaryshadow != null){
 const calendarshadows = document.getElementById('bCalendar');
 if (calendarshadows != null){
   calendarshadows.style.boxShadow = 'none';
+}
+
+const period = document.getElementsByClassName('Period');
+for (elt of period) {
+  elt.style['backgroundColor'] = $8dp;
+  elt.style['color'] = text_color;
+}
+
+const tblTt = document.getElementById('tblTt');
+if (tblTt != null){
+  for (elt of tblTt.getElementsByTagName('th')) {
+    elt.style['background-color'] = $6dp;
+  }
 }
