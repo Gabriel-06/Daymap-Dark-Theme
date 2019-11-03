@@ -443,3 +443,6 @@ for (elt of msg) {
   elt.style['border-radius'] = '3px';
   elt.style['color'] = text_color;
 }
+
+const mainCss = document.getElementById('mainCss');
+mainCss.href = ''

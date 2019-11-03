@@ -2,14 +2,14 @@
 	http://test.loop.net.au/DayMap/styles.css
 	http://lms.daymap.com.au/DayMap/styles.css */
 
-/* @override 
+/* @override
 	http://test.loop.net.au/DayMap/styles.css */
 
 /*
 input, select {
     font-family: Verdana, Arial;
     font-size: 9pt;
-    FONT-WEIGHT: normal;    
+    FONT-WEIGHT: normal;
     line-height: 21px;
     padding-left:6px;
     padding-right:6px;
@@ -17,12 +17,14 @@ input, select {
 
 }*/
 
+@import url("styles.css?v=10_1_15");
+
  textarea {
     font-family: Verdana, Arial;
     font-size: 9pt;
-    FONT-WEIGHT: normal;     
+    FONT-WEIGHT: normal;
     padding-left:6px;
-    padding-right:6px; 
+    padding-right:6px;
 }
     input[type="button"].dialog {
         display: block;
@@ -250,14 +252,14 @@ a.link,
 a.link:link,
 a.link:visited,
 a.link:active, a.laa:focus,
-a.link:visited {  
-    text-decoration: none; 
+a.link:visited {
+    text-decoration: none;
     cursor: pointer;
-} 
+}
     a.link:hover {
         color: #fff;
-        background-color: #9CAAAD; 
-            text-decoration: none; 
+        background-color: #9CAAAD;
+            text-decoration: none;
         cursor: pointer;
     }
 
@@ -301,7 +303,7 @@ BLOCKQUOTE, PRE {
         }
 
             .daymapHeader .navButton div.navHeader:hover {
-                /*border: solid 3px #1073CE;  
+                /*border: solid 3px #1073CE;
     -webkit-transition : border 1000ms ease-out;
     -moz-transition : border 1000ms ease-out;
     -o-transition : border 1000ms ease-out;
@@ -1995,7 +1997,7 @@ div.lpAll {
     padding: 8px;
     min-height: 30px;
     overflow: auto;
-    border: solid 1px #F1F5FB; 
+    border: solid 1px #F1F5FB;
     overflow-wrap: break-word;
 }
 
@@ -2116,7 +2118,7 @@ table.LessonRoll {
     table.LessonRoll td {
         border-top: solid 1px #ECE9D8;
         /*vertical-align: top;*/
-        white-space: nowrap;  
+        white-space: nowrap;
         padding:8px;
     }
         table.LessonRoll td.lbl {
@@ -2489,19 +2491,19 @@ table.Report {
         padding-top: 6px;
         padding-bottom: 4px;
         padding-right: 8px;
-        
+
     }
 
         table.Report th div {
             max-width: 300px !important;
             overflow: hidden;
             text-overflow: ellipsis;
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
 
     table.Report td {
         border-top: solid 1px #249FD9;
-        vertical-align: top; 
+        vertical-align: top;
         font-size: 9pt;
         padding-right: 8px;
         padding-top: 3px;
@@ -2531,7 +2533,7 @@ table.Report td.nw {
 }
     */
 
-table.AssessmentAllResults { 
+table.AssessmentAllResults {
 }
 
  td.ClassReportCell {
@@ -2541,7 +2543,7 @@ table.AssessmentAllResults {
 
 
 /* Styles for LoopControls Grid*/
-table.Grid { 
+table.Grid {
     border-collapse: collapse;
         border: solid 1px #106584;
 }
@@ -2551,20 +2553,20 @@ table.Grid {
         white-space: nowrap;
         background-color: #249FD9;
         color: #FFFFFF;
-        font-weight: normal; 
+        font-weight: normal;
             border-right: 1px solid #249FD9 ;
         padding: 8px;
             border-bottom: 1px solid #464747 ;
     }
 
-    table.Grid td { 
+    table.Grid td {
         vertical-align: top;
         padding: 8px;
         padding-top: 12px;
         padding-bottom: 12px;
         white-space: nowrap;
             border-top: 1px solid #F1F5FB ;
-         
+
     }
 
         table.Grid td:first-child {
@@ -2591,10 +2593,10 @@ tr.GridHighlight {
     }
 
 tr.GridSelected {
-    background-color: #249FD9 !important; 
+    background-color: #249FD9 !important;
 }
 
-    tr.GridSelected td { 
+    tr.GridSelected td {
             border-top: 1px solid #464747 !important;
             border-bottom: 1px solid #464747 !important;
             color: #ffffff !important;
@@ -3354,30 +3356,30 @@ div.lnavtitle {
 /*Menu css*/
 
 /*
-div.lpMenuTop{z-index:150;position:absolute;top:0px;left:0px;height:26px;padding:0px; margin:0px; border:1px solid #e5e5e5; background-color:  #f2f2f2 ;   }    
+div.lpMenuTop{z-index:150;position:absolute;top:0px;left:0px;height:26px;padding:0px; margin:0px; border:1px solid #e5e5e5; background-color:  #f2f2f2 ;   }
 
 table.lpMenuTop{padding:0px; z-index:200;margin-left:20px}
 table.lpMenuTop td { padding-top:5px;padding-bottom:5px; padding-left:8px;padding-right:8px; font-size:8pt; font-family:Arial; white-space:nowrap; color:#767676}
-table.lpMenuTop td:hover{ padding-top:4px;padding-bottom:4px; padding-left:7px;padding-right:7px;  background-color:#249FD9; color:#ffffff   ; 
-                             border  :1px solid #5A91D9; cursor:pointer} 
-                             
-                             
-  div.lpMenu{position:absolute; box-shadow: 2px 2px 3px #999;display:none; padding:2px;z-index :1000; margin:0px; background-color:#f2f2f2;  
-             border:1px solid #e5e5e5;   
+table.lpMenuTop td:hover{ padding-top:4px;padding-bottom:4px; padding-left:7px;padding-right:7px;  background-color:#249FD9; color:#ffffff   ;
+                             border  :1px solid #5A91D9; cursor:pointer}
+
+
+  div.lpMenu{position:absolute; box-shadow: 2px 2px 3px #999;display:none; padding:2px;z-index :1000; margin:0px; background-color:#f2f2f2;
+             border:1px solid #e5e5e5;
              background-position:left;  }
  table.lpMenu{z-index :1000; color:#767676 }
- table.lpMenu td{ cursor:pointer; font-size:8pt; font-family:Arial; white-space:nowrap;} 
-td.lpMenuTd1 {padding:4px;width:18px; border-top:1px solid transparent; border-left :1px solid transparent; border-bottom :1px solid transparent;     }  
-td.lpMenuTd1 div {width:18px;   }  
-td.lpMenuTd2 {padding:4px;   border-top:1px solid transparent; border-bottom :1px solid transparent;  }   
-td.lpMenuTd3 {padding:4px;width:12px; border-top:1px solid transparent; border-right :1px solid transparent; border-bottom :1px solid transparent;    } 
+ table.lpMenu td{ cursor:pointer; font-size:8pt; font-family:Arial; white-space:nowrap;}
+td.lpMenuTd1 {padding:4px;width:18px; border-top:1px solid transparent; border-left :1px solid transparent; border-bottom :1px solid transparent;     }
+td.lpMenuTd1 div {width:18px;   }
+td.lpMenuTd2 {padding:4px;   border-top:1px solid transparent; border-bottom :1px solid transparent;  }
+td.lpMenuTd3 {padding:4px;width:12px; border-top:1px solid transparent; border-right :1px solid transparent; border-bottom :1px solid transparent;    }
 
-td.lpMenuTd1a {padding:4px;width:18px; border-top:1px solid #5A91D9; border-left :1px solid #5A91D9; border-bottom :1px solid #5A91D9;  
-                background:#249FD9    }  
-td.lpMenuTd1a div {width:18px; }  
-td.lpMenuTd2a {padding:4px; border-top:1px solid #5A91D9;  border-bottom :1px solid #5A91D9; background:#249FD9; color:#ffffff  }   
-td.lpMenuTd3a {padding:4px;width:12px; border-top:1px solid #5A91D9;    border-right :1px solid #5A91D9;  border-bottom :1px solid #5A91D9;  
-                background:#249FD9   } 
+td.lpMenuTd1a {padding:4px;width:18px; border-top:1px solid #5A91D9; border-left :1px solid #5A91D9; border-bottom :1px solid #5A91D9;
+                background:#249FD9    }
+td.lpMenuTd1a div {width:18px; }
+td.lpMenuTd2a {padding:4px; border-top:1px solid #5A91D9;  border-bottom :1px solid #5A91D9; background:#249FD9; color:#ffffff  }
+td.lpMenuTd3a {padding:4px;width:12px; border-top:1px solid #5A91D9;    border-right :1px solid #5A91D9;  border-bottom :1px solid #5A91D9;
+                background:#249FD9   }
 */
 div.lpMenuTop {
     z-index: 99;
@@ -3661,7 +3663,7 @@ td.cap {
     padding-left: 8px;
     color: #606060;
 }
-span.cap { 
+span.cap {
     padding-right: 8px;
     padding-left: 8px;
     color: rgb(138, 138, 138);
@@ -3687,10 +3689,10 @@ div.lblsaved {
     display: inline-block;
     float: right;
 }
-div.lblstatus { 
+div.lblstatus {
     font-size: 11px;
     color: #1073CE;
-    display: block; 
+    display: block;
     padding-bottom: 4px;
 }
 .frmTree {
@@ -4337,14 +4339,14 @@ div.diaryBox {
     padding: 6px;
 }
 
-div.diary { 
+div.diary {
     padding:6px;
 }
 
     div.diary div.ditm { /*renamed itm to ditm - it clashed with div.itm style*/
         padding: 4px;
         margin-bottom: 12px;
-        background-color: #ffffff; 
+        background-color: #ffffff;
     }
 
     div.diary div.default {
@@ -4392,7 +4394,7 @@ div.diary {
         color: #acacac;
     }
 
-    div.diary div.ditm:hover { 
+    div.diary div.ditm:hover {
     }
 
     div.diary div.selected {
@@ -5082,8 +5084,8 @@ input[readonly='true'] {
     float: left;
     font-size: 12pt;
     outline: none;
-     -webkit-user-select: none;  
-    -moz-user-select: none;    
+     -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
@@ -5096,15 +5098,15 @@ input[readonly='true'] {
 /*Landing page Responsive CSS*/
 
 .landingTable {
-    display: table; 
+    display: table;
 }
 .landingRow {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .landingCell {
-    display: table-cell; 
+    display: table-cell;
 }
 /*if the screen width is less than 1052px make the landing table appear in two columns with a column appearing below*/
 @media screen and (max-width: 1052px) {
