@@ -22,13 +22,11 @@ const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px r
 const primary_dark = '#006fa7'
 const text_color = '#e5e5e5'
 
-function addCss(rule) {
-  let css = document.createElement('style');
-  css.type = 'text/css';
-  if (css.styleSheet) css.styleSheet.cssText = rule; // Support for IE
-  else css.appendChild(document.createTextNode(rule)); // Support for the rest
-  document.getElementsByTagName("head")[0].appendChild(css);
-}
+let css = document.createElement('style');
+css.type = 'text/css';
+css.setAttribute('href', "https://raw.githubusercontent.com/Gabriel-06/Daymap-Dark-Theme/master/oldstyles.css?token=AKR2HKQ5RB76YMIIDIRPGTC5Y63WA");
+console.log(css)
+document.getElementsByTagName("head")[0].appendChild(css);
 
 const send_help = document.getElementsByTagName('td');
 for (elt of send_help) {
@@ -443,6 +441,3 @@ for (elt of msg) {
   elt.style['border-radius'] = '3px';
   elt.style['color'] = text_color;
 }
-
-const mainCss = document.getElementById('mainCss');
-mainCss.href = ''

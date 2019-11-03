@@ -17,8 +17,6 @@ input, select {
 
 }*/
 
-@import url("styles.css?v=10_1_15");
-
  textarea {
     font-family: Verdana, Arial;
     font-size: 9pt;
@@ -4538,7 +4536,7 @@ div.linklist a {
 }
 
     div.linklist a:hover {
-        background-color: #9CAAAD;
+        background-color: #FFFFFF;
         color: #ffffff;
     }
 /***Generic List***/
