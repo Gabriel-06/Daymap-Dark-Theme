@@ -21,6 +21,7 @@ const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px r
 
 const primary_dark = '#006fa7'
 const text_color = '#e5e5e5'
+const error_color = '#cf6679'
 
 function addCss(rule) {
   let css = document.createElement('style');
@@ -353,8 +354,6 @@ for (elt of tabsCnt) {
   elt.style['border-width'] = '0px';
 }
 
-
-
 const labelr = document.getElementsByClassName('LabelR');
 for (elt of labelr) {
   elt.style['color'] = text_color;
@@ -422,6 +421,13 @@ for (elt of msgBody) {
   elt.style['border-radius'] = '3px';
 }
 
+const rgGroupItem = document.getElementsByClassName('rgGroupItem');
+for (elt of rgGroupItem) {
+  elt.style['background-color'] = primary_dark;
+}
+
+
+
 addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
 
 addCss('div.msgBody {border: 0px solid #8DAED9; background-color: ' + $6dp + ' !important;}')
@@ -437,4 +443,27 @@ addCss('#folder_page a { color: ' + text_color + ' !important;}')
 
 addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
 
+addCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
+
 addCss('.icon img { content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
+
+addCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primary_dark +
+' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
+
+addCss('.TabsCnt > tbody > tr > td:first-child {border-right: 0px solid #d2d2d2 !important;}')
+
+addCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + primary_dark + ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
+
+addCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primary_dark + ' !important; background-color: ' + $6dp + ' !important;}')
+
+addCss('div.fbox { background-color: ' + $6dp + ' !important; border: 0px solid #F1F5FB !important; padding: 2px !important; margin: 5px !important; box-shadow: ' + $4dp_shadow + ' !important}')
+
+addCss('div.tabContentW {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important;}')
+
+addCss('table.feed td.itm {color: ' + text_color + ' !important;}')
+
+addCss('table.feed div.head {background-color: ' + primary_dark + ' !important;}')
+
+addCss('.Caption, .CaptionR8 {color: ' + text_color + ' !important;}')
+
+addCss('.Error {color: ' + error_color + ' !important;}')
