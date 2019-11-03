@@ -20,6 +20,16 @@ const $16dp_shadow = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rg
 const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12)'
 
 const primary_dark = '#006fa7'
+const text_color = '#e5e5e5'
+
+function addCss(rule) {
+  let css = document.createElement('style');
+  css.type = 'text/css';
+  if (css.styleSheet) css.styleSheet.cssText = rule; // Support for IE
+  else css.appendChild(document.createTextNode(rule)); // Support for the rest
+  document.getElementsByTagName("head")[0].appendChild(css);
+}
+
 
 const send_help = document.getElementsByTagName('td');
 for (elt of send_help) {
@@ -49,51 +59,37 @@ for (elt of toolbar) {
 
 const msgunread = document.getElementsByClassName('msg unread');
 for (elt of msgunread) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
   elt.style['background-color'] = $1dp;
   elt.style['box-shadow'] = $1dp_shadow;
 }
 
-const msg = document.getElementsByClassName('msg');
-for (elt of msg) {
-  elt.style['background-color'] = $6dp;
-  elt.style['color'] = '#e5e5e5';
-  elt.style['border-radius'] = '4px';
-  elt.style['border-width'] = '0px';
-  elt.style['box-shadow'] = $6dp_shadow;
-}
-
 const text = document.getElementsByTagName('a');
 for (elt of text) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
 }
 
 const h2 = document.getElementsByTagName('h2');
 for (elt of h2) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
 }
 
 const search = document.getElementsByClassName('hasDatepicker');
 for (elt of search) {
-  elt.style['background-color'] = '#e5e5e5';
+  elt.style['background-color'] = text_color;
   elt.style['border-color'] = '#ccc';
 }
 
 const caption = document.getElementsByClassName('Caption');
 for (elt of caption) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
   elt.style['padding-top'] = "0px";
 }
 
 const header = document.getElementsByClassName('Header');
 for (elt of header) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
   elt.style['background-color'] = 'transparent';
-}
-
-const sn = document.getElementsByClassName('sn');
-for (elt of sn) {
-  elt.style['color'] = '#acacac';
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -114,7 +110,7 @@ for (elt of postticker) {
 
 const headerr = document.getElementsByClassName('header');
 for (elt of headerr) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
   elt.style['background-color'] = $1dp;
   elt.style['border-color'] = '#535353';
   elt.style['box-shadow'] = $1dp_shadow;
@@ -125,7 +121,7 @@ const menu = document.getElementById('mnu').getElementsByTagName('td');
 for (elt of menu) {
     elt.style['background-color'] = 'transparent';
     elt.style['border-bottom'] = '0px';
-    elt.style['color'] = '#FFF'
+    elt.style['color'] = '#FFF';
 }
 
 const body = document.getElementById('mainBody').style.backgroundColor = $0dp;
@@ -156,7 +152,7 @@ for (elt of menuactive) {
 
 const captionr8 = document.getElementsByClassName('CaptionR8');
 for (elt of captionr8) {
-  elt.style['color'] = '#e5e5e5';
+  elt.style['color'] = text_color;
 }
 
 const hypertext = document.getElementsByClassName('dlgContent');
@@ -175,14 +171,14 @@ const week = document.getElementsByClassName('CE ditm');
 for (elt of week) {
   elt.style['background-color'] = $6dp;
   elt.style['box-shadow'] = $6dp_shadow;
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '3px';
   elt.style['border-color'] = primary_dark;
 }
 
 const timetable = document.getElementsByClassName('L ditm');
 for (elt of timetable) {
   elt.style['border-color'] = primary_dark;
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '3px';
   elt.style['background-color'] = $6dp;
   elt.style['box-shadow'] = $6dp_shadow;
 }
@@ -196,7 +192,7 @@ for (elt of diaryday) {
 const btn = document.getElementsByClassName('btn');
 for (elt of btn) {
   elt.style['background-color'] = primary_dark;
-  elt.style['box-shadow'] = $4dp_shadow
+  elt.style['box-shadow'] = $4dp_shadow;
 }
 
 const name_font = document.getElementsByClassName('sname');
@@ -215,6 +211,7 @@ const mobile_header = document.getElementsByClassName('header-mobile');
 for (elt of mobile_header) {
   elt.style['background-color'] = $8dp;
   elt.style['border-color'] = '#535353';
+  elt.style['border-width'] = '0px';
 }
 
 /*// TODO:
@@ -241,12 +238,6 @@ const mobile_profile_menu_sign_out = document.getElementsByTagName('a')[5].style
 const mobile_profile_menu_my_details = document.getElementsByTagName('a')[6].style['color'] = '#000000';
 const mobile_profile_menu_switch_user = document.getElementsByTagName('a')[7].style['color'] = '#000000';
 
-const period = document.getElementsByClassName('Period');
-for (elt of period) {
-  elt.style['backgroundColor'] = $8dp;
-  elt.style['color'] = '#e5e5e5'
-}
-
 const planclass_bg = document.getElementsByClassName('PlanClass');
 for (elt of planclass_bg) {
   elt.style['backgroundColor'] = $8dp;
@@ -254,17 +245,8 @@ for (elt of planclass_bg) {
 
 const msg_icons = document.getElementsByTagName('img');
 for (elt of msg_icons){
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/post32.png"){
-    elt.src = "https://i.ibb.co/fFRPCnk/post32.png"
-  }
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/msg32.png"){
-    elt.src = "https://i.ibb.co/G2gzBV8/msg32.png"
-  }
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/chat.png"){
-    elt.src = "https://i.ibb.co/LxXS7Jp/chat.png"
-  }
   if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/dtbFlat.png"){
-    elt.src = "https://i.ibb.co/4jLbP5P/calendar.png"
+    elt.src = "https://i.ibb.co/YhHs16d/calendar.png"
   }
   if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/daymap/images/daymap-text-logo-web.gif"){
     elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
@@ -273,38 +255,42 @@ for (elt of msg_icons){
 
 const table_row_group = document.getElementsByClassName('rgGroupHeader');
 for (elt of table_row_group) {
-  elt.style['backgroundColor'] = '#212020';
-  elt.style['box-shadow'] = '0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)';
+  elt.style['background-color'] = $24dp;
+  elt.style['box-shadow'] = $24dp_shadow;
 }
 
 const table_row = document.getElementsByClassName('rgRow');
 for (elt of table_row) {
-  elt.style['backgroundColor'] = '#242323';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const table_row_alt = document.getElementsByClassName('rgAltRow');
 for (elt of table_row_alt) {
-  elt.style['backgroundColor'] = '#222121';
+  elt.style['background-color'] = $3dp;
+  elt.style['box-shadow'] = $3dp_shadow;
 }
 
 const table_header = document.getElementsByClassName('rgHeader');
 for (elt of table_header) {
-  elt.style['backgroundColor'] = '#006fa7';
+  elt.style['background-color'] = primary_dark;
+  elt.style['box-shadow'] = $4dp_shadow;
 }
 
 const tasks = document.getElementsByClassName('active itm');
 for (elt of tasks) {
   elt.style['padding'] = '5px';
   elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '3px';
   elt.style['background-color'] = $6dp;
   elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['color'] = text_color
 }
 
 const diaryDay = document.getElementsByClassName('diaryDay');
 for (elt of diaryDay) {
   elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '3px';
   elt.style['background-color'] = primary_dark;
   elt.style['box-shadow'] = $1dp_shadow;
 }
@@ -312,7 +298,7 @@ for (elt of diaryDay) {
 const itm = document.getElementsByClassName('itm');
 for (elt of itm) {
   elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px'
+  elt.style['border-radius'] = '3px';
   elt.style['background-color'] = $6dp;
   elt.style['box-shadow'] = $6dp_shadow;
 }
@@ -340,7 +326,7 @@ const tabContentW = document.getElementsByClassName('tabContentW');
 for (elt of tabContentW) {
   elt.style['border-width'] = '0px';
   elt.style['background-color'] = $6dp;
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const fbox = document.getElementsByClassName('fbox');
@@ -353,17 +339,108 @@ for (elt of viewPort) {
   elt.style['border-width'] = '0px';
 }
 
-const tblTt = document.getElementById('tblTt').getElementsByTagName('th')
-for (elt of tblTt) {
-  elt.style['background-color'] = $6dp;
-}
-
 const ui_stuff = document.getElementsByClassName('ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget');
 for (elt of ui_stuff) {
   elt.style['background'] = primary_dark;
-  elt.style['color'] = '#e5e5e5'
+  elt.style['color'] = text_color;
+}
+
+const box = document.getElementsByClassName('Box');
+for (elt of box) {
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['border-width'] = '0px';
+}
+
+const tabsCnt = document.getElementsByClassName('TabsCnt');
+for (elt of tabsCnt) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
 }
 
 
-const diaryshadow = document.getElementById('btnDiary').style.boxShadow = 'none';
-const calendarshadows = document.getElementById('bCalendar').style.boxShadow = 'none';
+
+const labelr = document.getElementsByClassName('LabelR');
+for (elt of labelr) {
+  elt.style['color'] = text_color;
+}
+
+const cp_tabs = document.getElementById('cp_tabs');
+if (cp_tabs != null){
+  for (elt of cp_tabs.getElementsByTagName('a')) {
+    elt.style['background-color'] = $6dp;
+  }
+}
+
+const cp = document.getElementById('cp_cp_divAssignments');
+if (cp != null){
+  for (elt of cp.getElementsByTagName('th')) {
+    elt.style['background-color'] = $6dp;
+  }
+}
+
+
+const diaryshadow = document.getElementById('btnDiary');
+if (diaryshadow != null){
+  diaryshadow.style.boxShadow = 'none';
+}
+
+const calendarshadows = document.getElementById('bCalendar');
+if (calendarshadows != null){
+  calendarshadows.style.boxShadow = 'none';
+}
+
+const period = document.getElementsByClassName('Period');
+for (elt of period) {
+  elt.style['backgroundColor'] = $8dp;
+  elt.style['color'] = text_color;
+}
+
+const tblTt = document.getElementById('tblTt');
+if (tblTt != null){
+  for (elt of tblTt.getElementsByTagName('th')) {
+    elt.style['background-color'] = $6dp;
+  }
+}
+
+const msgFolderList = document.getElementsByClassName('msgFolderList');
+for (elt of msgFolderList) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+const msgBox = document.getElementsByClassName('msgBox');
+for (elt of msgBox) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+const msgBody = document.getElementsByClassName('msgBody');
+for (elt of msgBody) {
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
+
+addCss('div.msgBody {border: 0px solid #8DAED9; background-color: ' + $6dp + ' !important;}')
+
+addCss('body.Dialog {background-color: #ad4d4d !important;}')
+
+addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
+' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + text_color + ' !important;}')
+
+addCss('tr.msgHead td.sn { color: ' + text_color + ' !important;}')
+
+addCss('#folder_page a { color: ' + text_color + ' !important;}')
+
+addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
+
+addCss('.icon img { content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
