@@ -22,6 +22,7 @@ const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px r
 const primary_dark = '#006fa7'
 const text_color = '#e5e5e5'
 const error_color = '#cf6679'
+const dark_text_color = '#464747'
 
 function addCss(rule) {
   let css = document.createElement('style');
@@ -31,6 +32,15 @@ function addCss(rule) {
   document.getElementsByTagName("head")[0].appendChild(css);
 }
 
+function cssFrame(rule, frame) {
+  let cssFrame = document.createElement('style');
+  cssFrame.type = 'text/css';
+  if (cssFrame.styleSheet) cssFrame.styleSheet.cssText = rule; // Support for IE
+  else cssFrame.appendChild(document.createTextNode(rule)); // Support for the rest
+  frames[frame].document.head.appendChild(cssFrame);
+}
+
+console.log(frames);
 
 const send_help = document.getElementsByTagName('td');
 for (elt of send_help) {
@@ -455,7 +465,7 @@ if(divDiaryDay != null){
   divDiaryDay.style['margin-top'] = '20px';
 }
 
-
+addCss("*:not(.lpMenuTd1, .lpMenuTd2, .lpMenuTd3, .lpMenuTd1a, .lpMenuTd2a, .lpMenuTd3a, .lpMenu) {color: " + text_color + " !important; font-family: 'Roboto', 'Helvetica Neue',Helvetica,Arial,sans-serif !important;}")
 
 addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
 
@@ -516,3 +526,31 @@ addCss('div.diaryCnt {border: 0px solid #1073CE !important; border-radius: 3px !
 addCss('div.diary div.ditm {background-color: ' + $6dp + ' !important;}')
 
 addCss('.c a {color: ' + text_color + ' !important;}')
+
+addCss('.sn img { content:url(https://i.ibb.co/Vq43b1g/attachment.png) !important;}')
+
+addCss('td.PlanClass {color: ' + text_color + ' !important; border-top: solid 1px ' + primary_dark + ' !important;}')
+
+addCss('a.PlanClass {color: ' + text_color + ' !important;}')
+
+addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important}')
+
+addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+
+addCss('td.PlanDay {background-color: ' + primary_dark + ' !important; color: ' + text_color + ' !important;}')
+
+addCss('td.PlanWeek {background-color: ' + primary_dark + ' !important; color: ' + text_color + ' !important;}')
+
+addCss('.diaryDayLabel {margin-bottom: 15px}')
+
+addCss('div.lpHead img { content:url(https://i.ibb.co/xL9vZvt/class-post.png) !important;}')
+
+addCss('.lpMenu {color: ' + dark_text_color + ' !important;}')
+
+addCss('.mobile-menu-list {background-color: ' + $1dp + ' !important;}')
+
+addCss('.mobile-menu-list > div a {color: ' + text_color + ' !important;}')
+
+addCss('.mobile-menu-list > div a:focus, .mobile-menu-list > div a.selected {color: #fff; background-color: #1F9DD9; }')
+
+addCss('.mobile-menu-list > div a.menu-parent {background-color: ' + $12dp + ' !important;}')
