@@ -22,6 +22,14 @@ const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px r
 const primary_dark = '#006fa7'
 const text_color = '#e5e5e5'
 
+function addCss(rule) {
+  let css = document.createElement('style');
+  css.type = 'text/css';
+  if (css.styleSheet) css.styleSheet.cssText = rule; // Support for IE
+  else css.appendChild(document.createTextNode(rule)); // Support for the rest
+  document.getElementsByTagName("head")[0].appendChild(css);
+}
+
 const send_help = document.getElementsByTagName('td');
 for (elt of send_help) {
   elt.style['backgroundColor'] = 'transparent';
@@ -53,15 +61,6 @@ for (elt of msgunread) {
   elt.style['color'] = text_color;
   elt.style['background-color'] = $1dp;
   elt.style['box-shadow'] = $1dp_shadow;
-}
-
-const msg = document.getElementsByClassName('msg');
-for (elt of msg) {
-  elt.style['background-color'] = $6dp;
-  elt.style['color'] = text_color;
-  elt.style['border-radius'] = '3px';
-  elt.style['border-width'] = '0px';
-  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const text = document.getElementsByTagName('a');
@@ -263,23 +262,26 @@ for (elt of msg_icons){
 
 const table_row_group = document.getElementsByClassName('rgGroupHeader');
 for (elt of table_row_group) {
-  elt.style['backgroundColor'] = '#212020';
-  elt.style['box-shadow'] = '0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12)';
+  elt.style['background-color'] = $24dp;
+  elt.style['box-shadow'] = $24dp_shadow;
 }
 
 const table_row = document.getElementsByClassName('rgRow');
 for (elt of table_row) {
-  elt.style['backgroundColor'] = '#242323';
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
 }
 
 const table_row_alt = document.getElementsByClassName('rgAltRow');
 for (elt of table_row_alt) {
-  elt.style['backgroundColor'] = '#222121';
+  elt.style['background-color'] = $3dp;
+  elt.style['box-shadow'] = $3dp_shadow;
 }
 
 const table_header = document.getElementsByClassName('rgHeader');
 for (elt of table_header) {
-  elt.style['backgroundColor'] = '#006fa7';
+  elt.style['background-color'] = primary_dark;
+  elt.style['box-shadow'] = $4dp_shadow;
 }
 
 const tasks = document.getElementsByClassName('active itm');
@@ -407,4 +409,37 @@ if (tblTt != null){
   for (elt of tblTt.getElementsByTagName('th')) {
     elt.style['background-color'] = $6dp;
   }
+}
+
+const msgFolderList = document.getElementsByClassName('msgFolderList');
+for (elt of msgFolderList) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+const msgBox = document.getElementsByClassName('msgBox');
+for (elt of msgBox) {
+  elt.style['background-color'] = $1dp;
+  elt.style['box-shadow'] = $1dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+const msgBody = document.getElementsByClassName('msgBody');
+for (elt of msgBody) {
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+}
+
+const msg = document.getElementsByClassName('msg');
+for (elt of msg) {
+  elt.style['background-color'] = $6dp;
+  elt.style['box-shadow'] = $6dp_shadow;
+  elt.style['border-width'] = '0px';
+  elt.style['border-radius'] = '3px';
+  elt.style['color'] = text_color;
 }
