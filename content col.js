@@ -22,11 +22,14 @@ const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px r
 const primary_dark = '#006fa7'
 const text_color = '#e5e5e5'
 
-let css = document.createElement('style');
-css.type = 'text/css';
-css.setAttribute('href', "https://raw.githubusercontent.com/Gabriel-06/Daymap-Dark-Theme/master/oldstyles.css?token=AKR2HKQ5RB76YMIIDIRPGTC5Y63WA");
-console.log(css)
-document.getElementsByTagName("head")[0].appendChild(css);
+function addCss(rule) {
+  let css = document.createElement('style');
+  css.type = 'text/css';
+  if (css.styleSheet) css.styleSheet.cssText = rule; // Support for IE
+  else css.appendChild(document.createTextNode(rule)); // Support for the rest
+  document.getElementsByTagName("head")[0].appendChild(css);
+}
+
 
 const send_help = document.getElementsByTagName('td');
 for (elt of send_help) {
@@ -87,11 +90,6 @@ const header = document.getElementsByClassName('Header');
 for (elt of header) {
   elt.style['color'] = text_color;
   elt.style['background-color'] = 'transparent';
-}
-
-const sn = document.getElementsByClassName('sn');
-for (elt of sn) {
-  elt.style['color'] = '#acacac';
 }
 
 const cap = document.getElementsByClassName('cap');
@@ -241,15 +239,6 @@ for (elt of planclass_bg) {
 
 const msg_icons = document.getElementsByTagName('img');
 for (elt of msg_icons){
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/post32.png"){
-    elt.src = "https://i.ibb.co/fFRPCnk/post32.png"
-  }
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/msg32.png"){
-    elt.src = "https://i.ibb.co/G2gzBV8/msg32.png"
-  }
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/coms/chat.png"){
-    elt.src = "https://i.ibb.co/LxXS7Jp/chat.png"
-  }
   if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/dtbFlat.png"){
     elt.src = "https://i.ibb.co/YhHs16d/calendar.png"
   }
@@ -433,11 +422,19 @@ for (elt of msgBody) {
   elt.style['border-radius'] = '3px';
 }
 
-const msg = document.getElementsByClassName('msg');
-for (elt of msg) {
-  elt.style['background-color'] = $6dp;
-  elt.style['box-shadow'] = $6dp_shadow;
-  elt.style['border-width'] = '0px';
-  elt.style['border-radius'] = '3px';
-  elt.style['color'] = text_color;
-}
+addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
+
+addCss('div.msgBody {border: 0px solid #8DAED9; background-color: ' + $6dp + ' !important;}')
+
+addCss('body.Dialog {background-color: #ad4d4d !important;}')
+
+addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
+' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + text_color + ' !important;}')
+
+addCss('tr.msgHead td.sn { color: ' + text_color + ' !important;}')
+
+addCss('#folder_page a { color: ' + text_color + ' !important;}')
+
+addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
+
+addCss('.icon img { content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
