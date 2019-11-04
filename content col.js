@@ -465,7 +465,9 @@ if(divDiaryDay != null){
   divDiaryDay.style['margin-top'] = '20px';
 }
 
-addCss("*:not(.lpMenuTd1, .lpMenuTd2, .lpMenuTd3, .lpMenuTd1a, .lpMenuTd2a, .lpMenuTd3a, .lpMenu) {color: " + text_color + " !important; font-family: 'Roboto', 'Helvetica Neue',Helvetica,Arial,sans-serif !important;}")
+addCss('.PlanClass * {color: ' + text_color + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+
+addCss('.menuContainter {color: #FF00FF;}')
 
 addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
 
@@ -554,3 +556,5 @@ addCss('.mobile-menu-list > div a {color: ' + text_color + ' !important;}')
 addCss('.mobile-menu-list > div a:focus, .mobile-menu-list > div a.selected {color: #fff; background-color: #1F9DD9; }')
 
 addCss('.mobile-menu-list > div a.menu-parent {background-color: ' + $12dp + ' !important;}')
+
+addCss('.ui-icon{background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
