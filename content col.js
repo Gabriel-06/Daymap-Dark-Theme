@@ -62,6 +62,11 @@ for (elt of card) {
   elt.style['box-shadow'] = $1dp_shadow;
 }
 
+const ddlWeekbutton = document.getElementById('ddlWeek-button');
+if (ddlWeekbutton != null){
+  ddlWeekbutton.style.margin = '0px';
+}
+
 const toolbar = document.getElementsByClassName('Toolbar');
 for (elt of toolbar) {
   elt.style['border-width'] = '0px';
@@ -149,6 +154,16 @@ for (elt of mdi) {
   elt.style['color'] = '#FFF';
 }
 
+const ui = document.getElementsByClassName('ui-selectmenu-text');
+for (elt of ui) {
+  elt.style['padding-top'] = '3px';
+}
+
+const uiicon = document.getElementsByClassName('ui-selectmenu-icon ui-icon ui-icon-triangle-1-s');
+for (elt of uiicon) {
+  elt.style['color'] = '#FFF';
+}
+
 const dlgcontent = document.getElementsByClassName('dlgContent');
 for (elt of dlgcontent) {
   elt.style['background-color'] = $8dp;
@@ -199,7 +214,7 @@ for (elt of timetable) {
 const btn = document.getElementsByClassName('btn');
 for (elt of btn) {
   elt.style['background-color'] = primary_dark;
-  elt.style['box-shadow'] = $4dp_shadow;
+  elt.style['box-shadow'] = 'none';
 }
 
 const name_font = document.getElementsByClassName('sname');
