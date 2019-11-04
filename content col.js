@@ -411,7 +411,6 @@ if (cp != null){
   }
 }
 
-
 const diaryshadow = document.getElementById('btnDiary');
 if (diaryshadow != null){
   diaryshadow.style.boxShadow = 'none';
@@ -488,7 +487,9 @@ if(divDiaryDay != null){
   divDiaryDay.style['margin-top'] = '20px';
 }
 
-addCss("*:not(.lpMenuTd1, .lpMenuTd2, .lpMenuTd3, .lpMenuTd1a, .lpMenuTd2a, .lpMenuTd3a, .lpMenu) {color: " + text_color + " !important; font-family: 'Roboto', 'Helvetica Neue',Helvetica,Arial,sans-serif !important;}")
+addCss('.PlanClass * {color: ' + text_color + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+
+addCss('.menuContainter {color: #FF00FF;}')
 
 addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
 
@@ -577,3 +578,21 @@ addCss('.mobile-menu-list > div a {color: ' + text_color + ' !important;}')
 addCss('.mobile-menu-list > div a:focus, .mobile-menu-list > div a.selected {color: #fff; background-color: #1F9DD9; }')
 
 addCss('.mobile-menu-list > div a.menu-parent {background-color: ' + $12dp + ' !important;}')
+
+addCss('.ui-icon{background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
+
+addCss('table.tt th { background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important;}')
+
+addCss('table.GRID_STYLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
+
+addCss('table.GRID_STYLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
+
+addCss('table.tt td.Period {color: ' + text_color + ' !important;}')
+
+addCss('.PlanEvent img {content:url(https://i.ibb.co/NYbz8HJ/calendar-x05.png) !important;}')
+
+addCss('.PlanEvent a {color: ' + text_color + ' !important;}')
+
+addCss('div.diary div.L {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
+
+addCss('div.diary div.CE {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
