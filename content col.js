@@ -432,14 +432,22 @@ if (cp_dtbDate != null){
 
 const period = document.getElementsByClassName('Period');
 for (elt of period) {
-  elt.style['backgroundColor'] = $8dp;
   elt.style['color'] = text_color;
+}
+
+const ttdatatable = document.getElementsByClassName('tt data-table');
+for (elt of ttdatatable) {
+  elt.style['backgroundColor'] = $8dp;
+  elt.style['box-shadow'] = $2dp_shadow;
 }
 
 const tblTt = document.getElementById('tblTt');
 if (tblTt != null){
   for (elt of tblTt.getElementsByTagName('th')) {
-    elt.style['background-color'] = $6dp;
+    elt.style['background-color'] = $8dp;
+  }
+  for (elt of tblTt.getElementsByTagName('tbody')) {
+      elt.style['border-radius'] = '4px';
   }
 }
 
