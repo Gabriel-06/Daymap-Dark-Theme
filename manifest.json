@@ -2,8 +2,12 @@
   "manifest_version": 2,
   "name": "Daymap Dark Theme",
   "version": "0.2",
-  "content_scripts": [
-    {
+  "icons": {"16": "DDT_Icons/DDT_16px.png",
+            "32": "DDT_Icons/DDT_32px.png",
+            "48": "DDT_Icons/DDT_48px.png",
+            "64": "DDT_Icons/DDT_64px.png"},
+
+  "content_scripts": [{
       "matches": [
         "https://daymap.marryatvillehs.sa.edu.au/*",
         "http://daymap.marryatvillehs.sa.edu.au/*"
@@ -11,5 +15,7 @@
       ],
       "js": ["content col.js"]
     }
-  ]
+  ],
+  "author": "Yuehan Xia and Gabriel Csizmadia",
+  "short_name": "DDT"
 }
