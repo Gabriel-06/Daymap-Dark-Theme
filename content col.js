@@ -596,3 +596,13 @@ addCss('.PlanEvent a {color: ' + text_color + ' !important;}')
 addCss('div.diary div.L {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
 
 addCss('div.diary div.CE {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
+
+addCss("input:not([type='button']):not([type='submit']), textarea, .multiSelect {color: " + text_color + " !important; background-color: " + $12dp + " !important;   border: 0px solid #becad6 !important;}")
+
+addCss('div.tlbr {border: 0px solid #e5e5e5 !important; background: ' + $12dp + ' !important;}')
+
+addCss('.lptbBtn {color: ' + text_color + ' !important;}')
+
+addCss('table.dtp:hover {background-color: transparent !important;}')
+
+addCss('#ddlClass {color: ' + text_color + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
