@@ -256,17 +256,6 @@ for (elt of planclass_bg) {
   elt.style['background-color'] = $8dp
 }
 
-const msg_icons = document.getElementsByTagName('img')
-for (elt of msg_icons) {
-  // FIXME maybe === ?
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/Daymap/images/dtbFlat.png") {
-    elt.src = "https://i.ibb.co/YhHs16d/calendar.png"
-  }
-  if (elt.src == "https://daymap.marryatvillehs.sa.edu.au/daymap/images/daymap-text-logo-web.gif") {
-    elt.src = "https://i.ibb.co/SR4c9fT/logo-trans.png"
-  }
-}
-
 const table_row_group = document.getElementsByClassName('rgGroupHeader')
 for (elt of table_row_group) {
   elt.style['background-color'] = $24dp
@@ -496,6 +485,7 @@ for (elt of attendance) {
   elt.style['color'] = '#292929'
 }
 
+addCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
 
 addCss('.PlanClass * {color: ' + text_color + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
@@ -510,15 +500,15 @@ addCss('body.Dialog {background-color: #ad4d4d !important;}')
 addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
   ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + text_color + ' !important;}')
 
-addCss('tr.msgHead td.sn { color: ' + text_color + ' !important;}')
+addCss('tr.msgHead td.sn {color: ' + text_color + ' !important;}')
 
-addCss('#folder_page a { color: ' + text_color + ' !important;}')
+addCss('#folder_page a {color: ' + text_color + ' !important;}')
 
 addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
 
 addCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
 
-addCss('.icon img { content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
+addCss('.icon img {content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
 
 addCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primary_dark +
   ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
