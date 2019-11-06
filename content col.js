@@ -143,11 +143,6 @@ for (elt of menu) {
 
 const body = document.getElementById('mainBody').style.backgroundColor = $0dp
 
-const attendance = document.getElementsByClassName('sdIndicator')
-for (elt of attendance) {
-  elt.style['color'] = '#292929'
-}
-
 const mdi = document.getElementsByClassName('mdi mdi-menu')
 for (elt of mdi) {
   elt.style['color'] = '#FFF'
@@ -476,13 +471,13 @@ if (divDiaryDay != null) {
   divDiaryDay.style['margin-top'] = '20px'
 }
 
-const attendance1 = document.getElementsByClassName('sdIndicator')
-for (elt of attendance1){
+const attendance = document.getElementsByClassName('sdIndicator')
+for (elt of attendance){
   if (elt.style['background-color'] == 'rgb(255, 0, 0)') { // red attendance
     elt.style['background-color'] = error_color
   }
   if (elt.style['background-color'] == 'rgb(255, 255, 0)'){ // yellow attendance
-    elt.style['background-color'] = '#d1d422'
+    elt.style['background-color'] = '#d1d422a'
   }
   if (elt.style['background-color'] == 'rgb(126, 225, 147)'){ // green attendance
     elt.style['background-color'] = '#66cf79'
@@ -490,6 +485,7 @@ for (elt of attendance1){
   if (elt.style['background-color'] == 'rgb(100, 227, 32)'){ //  detentions
     elt.style['background-color'] = '#66cf79'
   }
+  elt.style['color'] = '#292929'
 }
 
 
