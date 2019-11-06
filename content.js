@@ -642,3 +642,5 @@ addCss('div.msgReplies {border-bottom: 0px solid #D8CA95 !important; color: ' + 
 addCss('div.msgSender {color: ' + primary + ' !important;}')
 
 addCss('div.lpAll {background-color: ' + $6dp + ' !important; border: solid 0px #F1F5FB !important;}')
+
+addCss('#divUserAvatarMobile {border: 2px solid #fff !important;}')
