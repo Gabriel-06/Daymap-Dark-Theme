@@ -11,11 +11,11 @@
 
   "content_scripts": [{
     "matches": [
-      "https://daymap.marryatvillehs.sa.edu.au/*",
-      "http://daymap.marryatvillehs.sa.edu.au/*"
+      "https://daymap.*.sa.edu.au/*",
+      "http://daymap.*.sa.edu.au/*"
 
     ],
-    "js": ["content col.js"]
+    "js": ["content.js"]
   }],
   "author": "Yuehan Xia and Gabriel Csizmadia",
   "short_name": "DDT"
