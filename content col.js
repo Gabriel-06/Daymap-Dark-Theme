@@ -31,7 +31,7 @@ const text_color = '#e5e5e5'
 const error_color = '#cf6679'
 const dark_text_color = '#464747'
 
-function addCss (rule) {
+function addCss(rule) {
   let css = document.createElement('style')
   css.type = 'text/css'
   if (css.styleSheet) css.styleSheet.cssText = rule // Support for IE
@@ -40,8 +40,10 @@ function addCss (rule) {
 }
 
 const send_help = document.getElementsByTagName('td')
-for (elt of send_help) {
-  elt.style['background-color'] = 'transparent'
+if (send_help != null) {
+  for (elt of send_help) {
+    elt.style['background-color'] = 'transparent'
+  }
 }
 
 const maintext = document.getElementsByTagName('div')
@@ -474,11 +476,28 @@ if (divDiaryDay != null) {
   divDiaryDay.style['margin-top'] = '20px'
 }
 
+const attendance1 = document.getElementsByClassName('sdIndicator')
+for (elt of attendance1){
+  if (elt.style['background-color'] == 'rgb(255, 0, 0)') { // red attendance
+    elt.style['background-color'] = error_color
+  }
+  if (elt.style['background-color'] == 'rgb(255,255,0)'){ // yellow attendance
+    elt.style['background-color'] = '#dbe17e'
+  }
+  if (elt.style['background-color'] == 'rgb(126, 225, 147)'){ // green attendance
+    elt.style['background-color'] = '#66cf79'
+  }
+  if (elt.style['background-color'] == 'rgb(100, 227, 32)'){ //  detentions
+    elt.style['background-color'] = '#66cf79'
+  }
+}
+
+
 addCss('.PlanClass * {color: ' + text_color + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
 addCss('.menuContainter {color: #FF00FF} !important;')
 
-addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important;}')
+addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
 
 addCss('div.msgBody {border: 0px solid #8DAED9 !important; background-color: ' + $6dp + ' !important;}')
 
@@ -524,9 +543,9 @@ addCss('div.diaryDay {background-color: ' + primary_dark + ' !important; border-
 
 addCss('td.diaryDay {background-color: ' + primary_dark + ' !important; border-width: 0px !important; box-shadow: ' + $1dp_shadow + ' !important; color: ' + text_color + ' !important;}')
 
-addCss('td.diaryDay:hover { background-color: ' + primary_dark + ' !important;}')
+addCss('td.diaryDay:hover { background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
 
-addCss('td.diaryDay:hover div { background-color: ' + primary_dark + ' !important;}')
+addCss('td.diaryDay:hover div { background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
 
 addCss('div.diaryDayLabel { color: ' + text_color + ' !important;}')
 
@@ -590,7 +609,7 @@ addCss('div.tlbr {border: 0px solid #e5e5e5 !important; background: ' + $12dp + 
 
 addCss('.lptbBtn {color: ' + text_color + ' !important;}')
 
-addCss('table.dtp:hover {background-color: transparent !important;}')
+addCss('table.dtp:hover {background-color: transparent !important; border-radius: 3px !important;}')
 
 addCss('#ddlClass {color: ' + text_color + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
 
