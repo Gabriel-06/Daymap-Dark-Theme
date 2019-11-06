@@ -11,8 +11,7 @@
 
   "content_scripts": [{
     "matches": [
-      "*://*.sa.edu.au/daymap/*",
-      "*://*.sa.edu.au/DayMap/*"
+      "*://*.sa.edu.au/*ay*ap/*"
     ],
     "js": ["content.js"]
   }],

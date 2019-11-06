@@ -51,7 +51,10 @@ for (elt of maintext) {
   elt.style['color'] = '#FFF'
 }
 
-const calenderthing = document.getElementsByTagName('td')[18].style['padding-top'] = '0px'
+const calenderthing = document.getElementsByTagName('td')[18]
+if (calenderthing != null){
+  calenderthing.style['padding-top'] = '0px'
+}
 
 const card = document.getElementsByClassName('card')
 for (elt of card) {
@@ -134,14 +137,19 @@ for (elt of headerr) {
   elt.style['border-width'] = '0px'
 }
 
-const menu = document.getElementById('mnu').getElementsByTagName('td')
-for (elt of menu) {
-  elt.style['background-color'] = 'transparent'
-  elt.style['border-bottom'] = '0px'
-  elt.style['color'] = '#FFF'
+const menu = document.getElementById('mnu')
+if (menu != null) {
+  for (elt of menu.getElementsByTagName('td')) {
+    elt.style['background-color'] = 'transparent'
+    elt.style['border-bottom'] = '0px'
+    elt.style['color'] = '#FFF'
+  }
 }
 
-const body = document.getElementById('mainBody').style.backgroundColor = $0dp
+const body = document.getElementById('mainBody')
+if (body != null){
+  body.style.backgroundColor = $0dp
+}
 
 const mdi = document.getElementsByClassName('mdi mdi-menu')
 for (elt of mdi) {
@@ -472,17 +480,17 @@ if (divDiaryDay != null) {
 }
 
 const attendance = document.getElementsByClassName('sdIndicator')
-for (elt of attendance){
+for (elt of attendance) {
   if (elt.style['background-color'] == 'rgb(255, 0, 0)') { // red attendance
     elt.style['background-color'] = error_color
   }
-  if (elt.style['background-color'] == 'rgb(255, 255, 0)'){ // yellow attendance
+  if (elt.style['background-color'] == 'rgb(255, 255, 0)') { // yellow attendance
     elt.style['background-color'] = '#d1d422a'
   }
-  if (elt.style['background-color'] == 'rgb(126, 225, 147)'){ // green attendance
+  if (elt.style['background-color'] == 'rgb(126, 225, 147)') { // green attendance
     elt.style['background-color'] = '#66cf79'
   }
-  if (elt.style['background-color'] == 'rgb(100, 227, 32)'){ //  detentions
+  if (elt.style['background-color'] == 'rgb(100, 227, 32)') { //  detentions
     elt.style['background-color'] = '#66cf79'
   }
   elt.style['color'] = '#292929'
@@ -644,3 +652,9 @@ addCss('div.msgSender {color: ' + primary + ' !important;}')
 addCss('div.lpAll {background-color: ' + $6dp + ' !important; border: solid 0px #F1F5FB !important;}')
 
 addCss('#divUserAvatarMobile {border: 2px solid #fff !important;}')
+
+addCss('.toast-container .toast.info {background-color: ' + primary_dark + ' !important; box-shadow: none !important; }')
+
+addCss('.toast-container .toast.info .toast-icon {background-color: ' + primary_dark + ' !important; }')
+
+addCss('.CaptionR {color: ' + text_color + ' !important;}')
