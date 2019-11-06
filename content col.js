@@ -481,8 +481,8 @@ for (elt of attendance1){
   if (elt.style['background-color'] == 'rgb(255, 0, 0)') { // red attendance
     elt.style['background-color'] = error_color
   }
-  if (elt.style['background-color'] == 'rgb(255,255,0)'){ // yellow attendance
-    elt.style['background-color'] = '#dbe17e'
+  if (elt.style['background-color'] == 'rgb(255, 255, 0)'){ // yellow attendance
+    elt.style['background-color'] = '#d1d422'
   }
   if (elt.style['background-color'] == 'rgb(126, 225, 147)'){ // green attendance
     elt.style['background-color'] = '#66cf79'
