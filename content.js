@@ -607,7 +607,9 @@ addCss('table.dtp:hover {background-color: transparent !important; border-radius
 
 addCss('#ddlClass {color: ' + text_color + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
 
-addCss('#divTimetable div:not(.Badge) {background-color: ' + $6dp + ' !important;}')
+addCss('#divTimetable div:not(.Badge):not(.PlanClass):not(.PlanEvent):not(.lpTitle):not(.Caption):not(.cap):not(.Header) {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+
+addCss('.PlanEvent {background-color: ' + primary_dark + ' !important;}')
 
 addCss('table.feed td div.cap {color: ' + text_color + ' !important;}')
 
