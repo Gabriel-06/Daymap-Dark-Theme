@@ -26,10 +26,10 @@ const $16dp_shadow = '0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rg
 const $24dp_shadow = '0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12)'
 
 const primary = '#1f9dd9'
-const primary_dark = '#006fa7'
-const text_color = '#e5e5e5'
-const error_color = '#cf6679'
-const dark_text_color = '#464747'
+const primaryDark = '#006fa7'
+const textColor = '#e5e5e5'
+const errorColor = '#cf6679'
+const dark_textColor = '#464747'
 
 function addCss(rule) {
   let css = document.createElement('style')
@@ -79,36 +79,36 @@ for (elt of toolbar) {
 
 const msgunread = document.getElementsByClassName('msg unread')
 for (elt of msgunread) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
   elt.style['background-color'] = $1dp
   elt.style['box-shadow'] = $1dp_shadow
 }
 
 const text = document.getElementsByTagName('a')
 for (elt of text) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const h2 = document.getElementsByTagName('h2')
 for (elt of h2) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const search = document.getElementsByClassName('hasDatepicker')
 for (elt of search) {
-  elt.style['background-color'] = text_color
+  elt.style['background-color'] = textColor
   elt.style['border-color'] = '#ccc'
 }
 
 const caption = document.getElementsByClassName('Caption')
 for (elt of caption) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
   elt.style['padding-top'] = '0px'
 }
 
 const header = document.getElementsByClassName('Header')
 for (elt of header) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
   elt.style['background-color'] = 'transparent'
 }
 
@@ -125,12 +125,12 @@ for (elt of title) {
 const postticker = document.getElementsByClassName('post-ticker')
 for (elt of postticker) {
   elt.style['boxShadow'] = 'none'
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
 }
 
 const headerr = document.getElementsByClassName('header')
 for (elt of headerr) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
   elt.style['background-color'] = $1dp
   elt.style['border-color'] = '#535353'
   elt.style['box-shadow'] = $1dp_shadow
@@ -182,7 +182,7 @@ for (elt of menuactive) {
 
 const captionr8 = document.getElementsByClassName('CaptionR8')
 for (elt of captionr8) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const hypertext = document.getElementsByClassName('dlgContent')
@@ -202,12 +202,12 @@ for (elt of week) {
   elt.style['background-color'] = $6dp
   elt.style['box-shadow'] = $6dp_shadow
   elt.style['border-radius'] = '3px'
-  elt.style['border-color'] = primary_dark
+  elt.style['border-color'] = primaryDark
 }
 
 const timetable = document.getElementsByClassName('L ditm')
 for (elt of timetable) {
-  elt.style['border-color'] = primary_dark
+  elt.style['border-color'] = primaryDark
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
   elt.style['box-shadow'] = $6dp_shadow
@@ -215,7 +215,7 @@ for (elt of timetable) {
 
 const btn = document.getElementsByClassName('btn')
 for (elt of btn) {
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
   elt.style['box-shadow'] = 'none'
 }
 
@@ -296,7 +296,7 @@ for (elt of table_row_alt) {
 
 const table_header = document.getElementsByClassName('rgHeader')
 for (elt of table_header) {
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
 }
 
 const tasks = document.getElementsByClassName('active itm')
@@ -306,7 +306,7 @@ for (elt of tasks) {
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
   elt.style['box-shadow'] = $6dp_shadow
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const itm = document.getElementsByClassName('itm')
@@ -327,13 +327,13 @@ const head = document.getElementsByClassName('head')
 for (elt of head) {
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
 }
 
 const badge = document.getElementsByClassName('Badge')
 for (elt of badge) {
   elt.style['border-width'] = '0px'
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
 }
 
 const tabContentW = document.getElementsByClassName('tabContentW')
@@ -355,8 +355,8 @@ for (elt of viewPort) {
 
 const ui_stuff = document.getElementsByClassName('ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget')
 for (elt of ui_stuff) {
-  elt.style['background'] = primary_dark
-  elt.style['color'] = text_color
+  elt.style['background'] = primaryDark
+  elt.style['color'] = textColor
 }
 
 const box = document.getElementsByClassName('Box')
@@ -375,7 +375,7 @@ for (elt of tabsCnt) {
 
 const labelr = document.getElementsByClassName('LabelR')
 for (elt of labelr) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const cp_tabs = document.getElementById('cp_tabs')
@@ -412,7 +412,7 @@ if (cp_dtbDate != null) {
 
 const period = document.getElementsByClassName('Period')
 for (elt of period) {
-  elt.style['color'] = text_color
+  elt.style['color'] = textColor
 }
 
 const ttdatatable = document.getElementsByClassName('tt data-table')
@@ -457,7 +457,7 @@ for (elt of msgBody) {
 
 const rgGroupItem = document.getElementsByClassName('rgGroupItem')
 for (elt of rgGroupItem) {
-  elt.style['background-color'] = primary_dark
+  elt.style['background-color'] = primaryDark
 }
 
 const divDiaryDay = document.getElementById('divDiaryDay')
@@ -471,7 +471,7 @@ if (divDiaryDay != null) {
 const attendance = document.getElementsByClassName('sdIndicator')
 for (elt of attendance) {
   if (elt.style['background-color'] == 'rgb(255, 0, 0)') { // red attendance
-    elt.style['background-color'] = error_color
+    elt.style['background-color'] = errorColor
   }
   if (elt.style['background-color'] == 'rgb(255, 255, 0)') { // yellow attendance
     elt.style['background-color'] = '#d1d422a'
@@ -487,22 +487,22 @@ for (elt of attendance) {
 
 addCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
 
-addCss('.PlanClass * {color: ' + text_color + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+addCss('.PlanClass * {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
 addCss('.menuContainter {color: #FF00FF} !important;')
 
-addCss('div.linklist a:hover {background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
+addCss('div.linklist a:hover {background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
 addCss('div.msgBody {border: 0px solid #8DAED9 !important; background-color: ' + $6dp + ' !important;}')
 
 addCss('body.Dialog {background-color: #ad4d4d !important;}')
 
 addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
-  ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + text_color + ' !important;}')
+  ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
 
-addCss('tr.msgHead td.sn {color: ' + text_color + ' !important;}')
+addCss('tr.msgHead td.sn {color: ' + textColor + ' !important;}')
 
-addCss('#folder_page a {color: ' + text_color + ' !important;}')
+addCss('#folder_page a {color: ' + textColor + ' !important;}')
 
 addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
 
@@ -510,70 +510,70 @@ addCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; borde
 
 addCss('.icon img {content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
 
-addCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primary_dark +
+addCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primaryDark +
   ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
 
 addCss('.TabsCnt > tbody > tr > td:first-child {border-right: 0px solid #d2d2d2 !important;}')
 
-addCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + primary_dark + ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
+addCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + primaryDark + ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
 
-addCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primary_dark + ' !important; background-color: ' + $6dp + ' !important;}')
+addCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primaryDark + ' !important; background-color: ' + $6dp + ' !important;}')
 
 addCss('div.fbox { background-color: ' + $6dp + ' !important; border: 0px solid #F1F5FB !important; padding: 2px !important; margin: 5px !important; box-shadow: ' + $4dp_shadow + ' !important}')
 
 addCss('div.tabContentW {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important;}')
 
-addCss('table.feed td.itm {color: ' + text_color + ' !important;}')
+addCss('table.feed td.itm {color: ' + textColor + ' !important;}')
 
-addCss('table.feed div.head {background-color: ' + primary_dark + ' !important;}')
+addCss('table.feed div.head {background-color: ' + primaryDark + ' !important;}')
 
-addCss('.Caption, .CaptionR8 {color: ' + text_color + ' !important;}')
+addCss('.Caption, .CaptionR8 {color: ' + textColor + ' !important;}')
 
-addCss('.Error {color: ' + error_color + ' !important;}')
+addCss('.Error {color: ' + errorColor + ' !important;}')
 
-addCss('td.diaryEvents {background-color: ' + $1dp + ' !important; border-bottom: 3px solid ' + primary_dark + ' !important;}')
+addCss('td.diaryEvents {background-color: ' + $1dp + ' !important; border-bottom: 3px solid ' + primaryDark + ' !important;}')
 
-addCss('div.diaryDay {background-color: ' + primary_dark + ' !important; border-width: 0px !important; border-radius: 3px; box-shadow: ' + $1dp_shadow + ' !important;}')
+addCss('div.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; border-radius: 3px; box-shadow: ' + $1dp_shadow + ' !important;}')
 
-addCss('td.diaryDay {background-color: ' + primary_dark + ' !important; border-width: 0px !important; box-shadow: ' + $1dp_shadow + ' !important; color: ' + text_color + ' !important;}')
+addCss('td.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; box-shadow: ' + $1dp_shadow + ' !important; color: ' + textColor + ' !important;}')
 
-addCss('td.diaryDay:hover { background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
+addCss('td.diaryDay:hover { background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
-addCss('td.diaryDay:hover div { background-color: ' + primary_dark + ' !important; border-radius: 3px !important;}')
+addCss('td.diaryDay:hover div { background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
-addCss('div.diaryDayLabel { color: ' + text_color + ' !important;}')
+addCss('div.diaryDayLabel { color: ' + textColor + ' !important;}')
 
-addCss('div.diaryDayLabelSmall { color: ' + text_color + ' !important;}')
+addCss('div.diaryDayLabelSmall { color: ' + textColor + ' !important;}')
 
 addCss('div.diaryCnt {border: 0px solid #1073CE !important; border-radius: 3px !important;}')
 
 addCss('div.diary div.ditm {background-color: ' + $6dp + ' !important;}')
 
-addCss('.c a {color: ' + text_color + ' !important;}')
+addCss('.c a {color: ' + textColor + ' !important;}')
 
 addCss('.sn img { content:url(https://i.ibb.co/Vq43b1g/attachment.png) !important;}')
 
-addCss('td.PlanClass {color: ' + text_color + ' !important; border-top: solid 1px ' + primary_dark + ' !important;}')
+addCss('td.PlanClass {color: ' + textColor + ' !important; border-top: solid 1px ' + primaryDark + ' !important;}')
 
-addCss('a.PlanClass {color: ' + text_color + ' !important;}')
+addCss('a.PlanClass {color: ' + textColor + ' !important;}')
 
-addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important}')
+addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important}')
 
-addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
 
-addCss('td.PlanDay {background-color: ' + primary_dark + ' !important; color: ' + text_color + ' !important;}')
+addCss('td.PlanDay {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
-addCss('td.PlanWeek {background-color: ' + primary_dark + ' !important; color: ' + text_color + ' !important;}')
+addCss('td.PlanWeek {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
 addCss('.diaryDayLabel {margin-bottom: 15px}')
 
 addCss('div.lpHead img { content:url(https://i.ibb.co/xL9vZvt/class-post.png) !important;}')
 
-addCss('.lpMenu {color: ' + dark_text_color + ' !important;}')
+addCss('.lpMenu {color: ' + dark_textColor + ' !important;}')
 
 addCss('.mobile-menu-list {background-color: ' + $1dp + ' !important;}')
 
-addCss('.mobile-menu-list > div a {color: ' + text_color + ' !important;}')
+addCss('.mobile-menu-list > div a {color: ' + textColor + ' !important;}')
 
 addCss('.mobile-menu-list > div a:focus, .mobile-menu-list > div a.selected {color: #fff; background-color: #1F9DD9; }')
 
@@ -581,63 +581,63 @@ addCss('.mobile-menu-list > div a.menu-parent {background-color: ' + $12dp + ' !
 
 addCss('.ui-icon{background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
 
-addCss('table.tt th { background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important;}')
+addCss('table.tt th { background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
 
 addCss('table.GRID_STYLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
 
 addCss('table.GRID_STYLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
 
-addCss('table.tt td.Period {color: ' + text_color + ' !important;}')
+addCss('table.tt td.Period {color: ' + textColor + ' !important;}')
 
 addCss('.PlanEvent img {content:url(https://i.ibb.co/NYbz8HJ/calendar-x05.png) !important;}')
 
-addCss('.PlanEvent a {color: ' + text_color + ' !important;}')
+addCss('.PlanEvent a {color: ' + textColor + ' !important;}')
 
-addCss('div.diary div.L {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
+addCss('div.diary div.L {border-left: 5px solid ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
-addCss('div.diary div.CE {border-left: 5px solid ' + primary_dark + ' !important; border-radius: 3px !important;}')
+addCss('div.diary div.CE {border-left: 5px solid ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
-addCss("input:not([type='button']):not([type='submit']), textarea, .multiSelect {color: " + text_color + " !important; background-color: " + $12dp + " !important;   border: 0px solid #becad6 !important;}")
+addCss("input:not([type='button']):not([type='submit']), textarea, .multiSelect {color: " + textColor + " !important; background-color: " + $24dp + " !important;   border: 0px solid #becad6 !important;}")
 
 addCss('div.tlbr {border: 0px solid #e5e5e5 !important; background: ' + $12dp + ' !important;}')
 
-addCss('.lptbBtn {color: ' + text_color + ' !important;}')
+addCss('.lptbBtn {color: ' + textColor + ' !important;}')
 
 addCss('table.dtp:hover {background-color: transparent !important; border-radius: 3px !important;}')
 
-addCss('#ddlClass {color: ' + text_color + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+addCss('#ddlClass {color: ' + textColor + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
 
 addCss('#divTimetable div:not(.Badge):not(.PlanClass):not(.PlanEvent):not(.lpTitle):not(.Caption):not(.cap):not(.Header) {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
 
-addCss('.PlanEvent {background-color: ' + primary_dark + ' !important;}')
+addCss('.PlanEvent {background-color: ' + primaryDark + ' !important;}')
 
-addCss('table.feed td div.cap {color: ' + text_color + ' !important;}')
+addCss('table.feed td div.cap {color: ' + textColor + ' !important;}')
 
-addCss('.Badge {background-color: ' + primary_dark + ' !important;}')
+addCss('.Badge {background-color: ' + primaryDark + ' !important;}')
 
 addCss('.ag {background-color: ' + $12dp + ' !important;}')
 
-addCss('table.GRID_STYLE th, table.rgGroupPanel th, table.publishoptions th, table.published_main th, table.rgMasterTable th, table.data-table th, table.dataTable th, table.Report th, table.SORTTABLE th {background-color: ' + primary_dark + ' !important;}')
+addCss('table.GRID_STYLE th, table.rgGroupPanel th, table.publishoptions th, table.published_main th, table.rgMasterTable th, table.data-table th, table.dataTable th, table.Report th, table.SORTTABLE th {background-color: ' + primaryDark + ' !important;}')
 
-addCss('.agHeader {background-color: ' + primary_dark + ' !important;}')
+addCss('.agHeader {background-color: ' + primaryDark + ' !important;}')
 
-addCss('.AttendanceMap {background-color: ' + primary_dark + ' !important; border-top: solid 0px #249FD9 !important; border-left: solid 0px #249FD9 !important; border-bottom: solid 0px #249FD9 !important; border-right: solid 0px #249FD9 !important;}')
+addCss('.AttendanceMap {background-color: ' + primaryDark + ' !important; border-top: solid 0px #249FD9 !important; border-left: solid 0px #249FD9 !important; border-bottom: solid 0px #249FD9 !important; border-right: solid 0px #249FD9 !important;}')
 
-addCss('h2, div.Header {color: ' + text_color + ' !important;}')
+addCss('h2, div.Header {color: ' + textColor + ' !important;}')
 
-addCss('.Label4 {color: ' + text_color + ' !important; paddingTop: 10px !important;}')
+addCss('.Label4 {color: ' + textColor + ' !important; paddingTop: 10px !important;}')
 
-addCss('.Label2 {color: ' + text_color + ' !important;}')
+addCss('.Label2 {color: ' + textColor + ' !important;}')
 
 addCss('div.threadR {border: 0px solid #8DAED9 !important; background-color: ' + $6dp + ' !important; border-radius: 3px !important;}')
 
 addCss('div.msgBody {border: 0px solid #8DAED9;}')
 
-addCss('div.msgLatest {background-color: ' + error_color + ' !important; border: solid 0px #ececec !important; border-radius: 3px !important;}')
+addCss('div.msgLatest {background-color: ' + errorColor + ' !important; border: solid 0px #ececec !important; border-radius: 3px !important;}')
 
-addCss('tr.msgHead td {color: ' + text_color + ' !important;}')
+addCss('tr.msgHead td {color: ' + textColor + ' !important;}')
 
-addCss('div.msgReplies {border-bottom: 0px solid #D8CA95 !important; color: ' + text_color + ' !important}')
+addCss('div.msgReplies {border-bottom: 0px solid #D8CA95 !important; color: ' + textColor + ' !important}')
 
 addCss('div.msgSender {color: ' + primary + ' !important;}')
 
@@ -645,8 +645,34 @@ addCss('div.lpAll {background-color: ' + $6dp + ' !important; border: solid 0px 
 
 addCss('#divUserAvatarMobile {border: 2px solid #fff !important;}')
 
-addCss('.toast-container .toast.info {background-color: ' + primary_dark + ' !important; box-shadow: none !important; }')
+addCss('.toast-container .toast.info {background-color: ' + primaryDark + ' !important; box-shadow: none !important; }')
 
-addCss('.toast-container .toast.info .toast-icon {background-color: ' + primary_dark + ' !important; }')
+addCss('.toast-container .toast.info .toast-icon {background-color: ' + primaryDark + ' !important; }')
 
-addCss('.CaptionR {color: ' + text_color + ' !important;}')
+addCss('.CaptionR {color: ' + textColor + ' !important;}')
+
+addCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+
+addCss('.TabsCnt .tabList > div > a {background-color: ' + $12dp + ' !important; border-radius: 3px !important;}')
+
+addCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open {border-radius: 3px !important;')
+
+addCss('table.Tasks td {background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+
+addCss('table.Tasks th {border-top: solid 0px #249FD9 !important; border-left: none 0px #6699cc !important; border-right: none 0px #6699cc !important; border-bottom: solid 0px #249FD9 !important; background-color: ' + primaryDark + ' !important;}')
+
+addCss('table.Tasks {border: 0px solid #106584 !important;}')
+
+addCss('div.SearchBox {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: #CDDAEA 0px solid !important; border-radius: 3px !important;}')
+
+addCss('div.SearchHeader {color: ' + textColor + ' !important;}')
+
+addCss('div.headw {background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
+
+addCss('button.btn, input.Button, input[type=button], input[type=submit], div.btn, label.btn {background-color: ' + primaryDark + ' !important; }')
+
+addCss(' button.btn:hover, input.Button:hover, input[type=button]:hover, input[type=submit]:hover, div.btn:hover, label.btn:hover {box-shadow: none !important;}')
+
+addCss('.lp p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+
+addCss('#divDesc table tbody tr[1] td {color: transparent !important;}')
