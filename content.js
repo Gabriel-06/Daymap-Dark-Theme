@@ -233,7 +233,7 @@ for (elt of linklist) {
 
 const mobile_header = document.getElementsByClassName('header-mobile')
 for (elt of mobile_header) {
-  elt.style['background-color'] = $8dp
+  elt.style['background-color'] = $8dp;
   elt.style['border-color'] = '#535353'
   elt.style['border-width'] = '0px'
 }
@@ -241,6 +241,17 @@ for (elt of mobile_header) {
 const profile_menu = document.getElementsByClassName('menu-label')
 for (elt of profile_menu) {
   elt.style['color'] = '#000000'
+}
+
+const lpHead = document.getElementsByClassName('lpHead')
+for (elt of lpHead) {
+  elt.style['padding-radius'] = '5px'
+}
+
+const headw = document.getElementsByClassName('headw')
+for (elt of headw) {
+  elt.style['border-radius'] = '4px'
+  elt.style['margin-bottom'] = '5px'
 }
 
 const profile_menu_sign_out = document.getElementsByTagName('a')[11].style['color'] = '#000000'
@@ -341,6 +352,7 @@ for (elt of tabContentW) {
   elt.style['border-width'] = '0px'
   elt.style['background-color'] = $6dp
   elt.style['box-shadow'] = $6dp_shadow
+  elt.style['border-radius'] = '4px'
 }
 
 const fbox = document.getElementsByClassName('fbox')
