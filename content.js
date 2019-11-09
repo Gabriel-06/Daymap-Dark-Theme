@@ -39,6 +39,45 @@ function addCss(rule) {
   document.getElementsByTagName('head')[0].appendChild(css)
 }
 
+function frameLoad(){
+  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head == firstLoad){
+      setTimeout(frameLoad, 100)
+      return
+  }
+  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null){
+    addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important;}')
+    addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + text_color + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.msgSender {color: ' + primary_dark + ' !important;}')
+    addFrameCss('.btn {background-color: ' + primary_dark + ' !important;}')
+    addFrameCss('.btn:hover {box-shadow: none !important;}')
+    addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+  }
+  else{
+    setTimeout(frameLoad, 50)
+  }
+}
+
+function addFrameCss(rule) {
+  let css = document.createElement('style')
+  css.type = 'text/css'
+  if (css.styleSheet) css.styleSheet.cssText = rule // Support for IE
+  else css.appendChild(document.createTextNode(rule)) // Support for the rest
+  console.log(document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head)
+  document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.getElementsByTagName('head')[0].appendChild(css)
+}
+
+var firstLoad
+const observer = new MutationObserver(function(mutations) {
+    if (mutations[1].addedNodes.length) {
+      firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
+      frameLoad()
+    }
+})
+const bears = document.querySelector('body#mainBody')
+observer.observe(bears, {
+  childList: true
+})
+
 const send_help = document.getElementsByTagName('td')
 if (send_help != null) {
   for (elt of send_help) {
@@ -52,7 +91,7 @@ for (elt of maintext) {
 }
 
 const calenderthing = document.getElementsByTagName('td')[18]
-if (calenderthing != null){
+if (calenderthing != null) {
   calenderthing.style['padding-top'] = '0px'
 }
 
@@ -147,7 +186,7 @@ if (menu != null) {
 }
 
 const body = document.getElementById('mainBody')
-if (body != null){
+if (body != null) {
   body.style.backgroundColor = $0dp
 }
 
@@ -166,11 +205,6 @@ for (elt of uiicon) {
   elt.style['color'] = '#FFF'
 }
 
-const dlgcontent = document.getElementsByClassName('dlgContent')
-for (elt of dlgcontent) {
-  elt.style['background-color'] = $8dp
-}
-
 const taskfinder = document.getElementsByClassName('lpMenuTd2')
 for (elt of taskfinder) {
   elt.style['border-left'] = '0px'
@@ -185,11 +219,6 @@ for (elt of captionr8) {
   elt.style['color'] = textColor
 }
 
-const hypertext = document.getElementsByClassName('dlgContent')
-for (elt of hypertext) {
-  elt.style['background-color'] = $8dp
-}
-
 const photothumb = document.getElementsByClassName('photoThumb')
 for (elt of photothumb) {
   elt.style['border-radius'] = '4px'
@@ -200,7 +229,7 @@ for (elt of photothumb) {
 const week = document.getElementsByClassName('CE ditm')
 for (elt of week) {
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = $4dp_shadow
   elt.style['border-radius'] = '3px'
   elt.style['border-color'] = primaryDark
 }
@@ -687,4 +716,14 @@ addCss(' button.btn:hover, input.Button:hover, input[type=button]:hover, input[t
 
 addCss('.lp p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
+<<<<<<< Updated upstream
 addCss('#divDesc table tbody tr[1] td {color: transparent !important;}')
+=======
+addCss('.CaptionR {color: ' + text_color + ' !important;}')
+
+addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !important;')
+
+addCss('#cp_dtbDate {vertical-align: middle !important;}')
+
+addCss('.CalImg {vertical-align: middle !important}')
+>>>>>>> Stashed changes
