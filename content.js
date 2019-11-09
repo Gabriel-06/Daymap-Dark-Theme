@@ -29,7 +29,7 @@ const primary = '#1f9dd9'
 const primaryDark = '#006fa7'
 const textColor = '#e5e5e5'
 const errorColor = '#cf6679'
-const dark_textColor = '#464747'
+const darkTextColor = '#464747'
 
 function addCss(rule) {
   let css = document.createElement('style')
@@ -45,10 +45,10 @@ function frameLoad(){
       return
   }
   if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null){
-    addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + text_color + ' !important;}')
-    addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + text_color + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
-    addFrameCss('.msgSender {color: ' + primary_dark + ' !important;}')
-    addFrameCss('.btn {background-color: ' + primary_dark + ' !important;}')
+    addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
+    addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
+    addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
     addFrameCss('.btn:hover {box-shadow: none !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
   }
@@ -610,7 +610,7 @@ addCss('.diaryDayLabel {margin-bottom: 15px}')
 
 addCss('div.lpHead img { content:url(https://i.ibb.co/xL9vZvt/class-post.png) !important;}')
 
-addCss('.lpMenu {color: ' + dark_textColor + ' !important;}')
+addCss('.lpMenu {color: ' + darkTextColor + ' !important;}')
 
 addCss('.mobile-menu-list {background-color: ' + $1dp + ' !important;}')
 
@@ -718,7 +718,7 @@ addCss('.lp p span {color: ' + textColor + ' !important; font-family: "Roboto", 
 
 addCss('#divDesc table tbody tr[1] td {color: transparent !important;}')
 
-addCss('.CaptionR {color: ' + text_color + ' !important;}')
+addCss('.CaptionR {color: ' + textColor + ' !important;}')
 
 addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !important;')
 
