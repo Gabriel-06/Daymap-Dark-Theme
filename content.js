@@ -716,9 +716,8 @@ addCss(' button.btn:hover, input.Button:hover, input[type=button]:hover, input[t
 
 addCss('.lp p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
-<<<<<<< Updated upstream
 addCss('#divDesc table tbody tr[1] td {color: transparent !important;}')
-=======
+
 addCss('.CaptionR {color: ' + text_color + ' !important;}')
 
 addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !important;')
@@ -726,4 +725,3 @@ addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !im
 addCss('#cp_dtbDate {vertical-align: middle !important;}')
 
 addCss('.CalImg {vertical-align: middle !important}')
->>>>>>> Stashed changes
