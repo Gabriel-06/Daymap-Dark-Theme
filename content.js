@@ -47,10 +47,21 @@ function frameLoad(){
   if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null){
     addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
     addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
     addFrameCss('.btn:hover {box-shadow: none !important;}')
+    addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('div {border-width: 0px !important;}')
+    addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
+    addFrameCss('.Caption {color: ' + textColor + ' !important;}')
+    addFrameCss('.CaptionR {color: ' + textColor + ' !important;}')
+    addFrameCss('.threadR {background-color: ' + $12dp + ' !important;}')
+    addFrameCss('.threadL {background-color: ' + $12dp + ' !important;}')
+    addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+
   }
   else{
     setTimeout(frameLoad, 50)
@@ -69,8 +80,12 @@ function addFrameCss(rule) {
 var firstLoad
 const observer = new MutationObserver(function(mutations) {
     if (mutations[1].addedNodes.length) {
-      firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
-      frameLoad()
+      if (document.getElementsByClassName('dlgContent')[0] != null) {
+        if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0] != null){
+          firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
+          frameLoad()
+        }
+      }
     }
 })
 const bears = document.querySelector('body#mainBody')
@@ -545,7 +560,8 @@ addCss('tr.msgHead td.sn {color: ' + textColor + ' !important;}')
 
 addCss('#folder_page a {color: ' + textColor + ' !important;}')
 
-addCss('div.msgSelected {border: 0px solid #249FD9 !important;}')
+addCss('div.msgSelected {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
+  ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
 
 addCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
 
@@ -633,6 +649,8 @@ addCss('table.tt td.Period {color: ' + textColor + ' !important;}')
 addCss('.PlanEvent img {content:url(https://i.ibb.co/NYbz8HJ/calendar-x05.png) !important;}')
 
 addCss('.PlanEvent a {color: ' + textColor + ' !important;}')
+
+addCss('.PlanEvent {border-radius: 3px !important;}')
 
 addCss('div.diary div.L {border-left: 5px solid ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
@@ -725,3 +743,17 @@ addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !im
 addCss('#cp_dtbDate {vertical-align: middle !important;}')
 
 addCss('.CalImg {vertical-align: middle !important}')
+
+addCss('.selected {border-width: 0px !important; background-color: ' + $24dp + ' !important; border-radius: 3px !important;}')
+
+addCss('.active:hover {border: 0px solid #9CAAAD !important;}')
+
+addCss('div.dlgContent {border: #CDDAEA 0px solid !important; background-color: ' + $6dp + ' !important;}')
+
+addCss('div.lblsaved {color: ' + textColor + ' !important;}')
+
+addCss('div.fld {BORDER-bottom: #ececec 0px solid !important; background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+
+addCss('.cap {color: ' + textColor + ' !important;}')
+
+addCss('.formCaption {color: ' + textColor + ' !important;}')
