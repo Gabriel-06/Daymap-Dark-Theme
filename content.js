@@ -39,12 +39,12 @@ function addCss(rule) {
   document.getElementsByTagName('head')[0].appendChild(css)
 }
 
-function frameLoad(){
-  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head == firstLoad){
-      setTimeout(frameLoad, 100)
-      return
+function frameLoad() {
+  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head == firstLoad) {
+    setTimeout(frameLoad, 100)
+    return
   }
-  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null){
+  if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
     addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
     addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
@@ -62,8 +62,7 @@ function frameLoad(){
     addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
 
-  }
-  else{
+  } else {
     setTimeout(frameLoad, 50)
   }
 }
@@ -79,14 +78,15 @@ function addFrameCss(rule) {
 
 var firstLoad
 const observer = new MutationObserver(function(mutations) {
-    if (mutations[1].addedNodes.length) {
+  if (mutations[1] != null) {
+    if (mutations[1].addedNodes.length)
       if (document.getElementsByClassName('dlgContent')[0] != null) {
-        if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0] != null){
+        if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0] != null) {
           firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
           frameLoad()
         }
       }
-    }
+  }
 })
 const bears = document.querySelector('body#mainBody')
 observer.observe(bears, {
@@ -757,3 +757,7 @@ addCss('div.fld {BORDER-bottom: #ececec 0px solid !important; background-color: 
 addCss('.cap {color: ' + textColor + ' !important;}')
 
 addCss('.formCaption {color: ' + textColor + ' !important;}')
+
+addCss('#ddlTerms {background-color: ' + $12dp + ' !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
+
+addCss('#ddlColourBy {background-color: ' + $12dp + ' !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
