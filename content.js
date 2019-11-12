@@ -59,8 +59,15 @@ function frameLoad() {
     addFrameCss('.CaptionR {color: ' + textColor + ' !important;}')
     addFrameCss('.threadR {background-color: ' + $12dp + ' !important;}')
     addFrameCss('.threadL {background-color: ' + $12dp + ' !important;}')
-    addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important;}')
+    addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important; border-radius: 3px !important;}')
+    addFrameCss('p {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+    addFrameCss('span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+    addFrameCss('div.ErrMsg {background-color: ' + $6dp + ' !important; color: ' + errorColor + ' !important;}')
+    addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+    addFrameCss('body {color: ' + errorColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important; font-size: 14px !important;}')
+    addFrameCss('a {color: ' + primary + ' !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+
 
   } else {
     setTimeout(frameLoad, 50)
@@ -86,11 +93,17 @@ const observer = new MutationObserver(function(mutations) {
           frameLoad()
         }
       }
+      if (document.getElementsByClassName('dlgContent')[1] != null) {
+        if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0] != null) {
+          firstLoad = document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head
+          frameLoad()
+        }
+      }
   }
 })
 const bears = document.querySelector('body#mainBody')
 observer.observe(bears, {
-  childList: true
+  childList: true,
 })
 
 const send_help = document.getElementsByTagName('td')
@@ -541,6 +554,8 @@ for (elt of attendance) {
   elt.style['color'] = '#292929'
 }
 
+addCss('.rgCollapse {background-color: ' + $12dp + ' !important;}')
+
 addCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
 
 addCss('.PlanClass * {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
@@ -740,7 +755,7 @@ addCss('.CaptionR {color: ' + textColor + ' !important;}')
 
 addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !important;')
 
-addCss('#cp_dtbDate {vertical-align: middle !important;}')
+addCss('#cp_dtbDate {vertical-align: middle !important; box-shadow: none !important;}')
 
 addCss('.CalImg {vertical-align: middle !important}')
 
@@ -761,3 +776,5 @@ addCss('.formCaption {color: ' + textColor + ' !important;}')
 addCss('#ddlTerms {background-color: ' + $12dp + ' !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
 
 addCss('#ddlColourBy {background-color: ' + $12dp + ' !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
+
+addCss('.msgBody span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica !important;}')
