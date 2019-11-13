@@ -113,7 +113,7 @@ for (elt of toolbar) {
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $4dp_shadow
+  elt.style['box-shadow'] = $1dp_shadow
 }
 
 const msgunread = document.getElementsByClassName('msg unread')
@@ -135,7 +135,7 @@ for (elt of h2) {
 
 const search = document.getElementsByClassName('hasDatepicker')
 for (elt of search) {
-  elt.style['background-color'] = textColor
+  elt.style['background-color'] = 'transparent'
   elt.style['border-color'] = '#ccc'
 }
 
@@ -445,15 +445,20 @@ if (calendarshadows != null) {
 
 const cp_dtbDate = document.getElementById('cp_dtbDate')
 if (cp_dtbDate != null) {
-  cp_dtbDate.style.boxShadow = $1dp_shadow
+  cp_dtbDate.style.boxShadow = 'none'
   cp_dtbDate.style.color = '#FFF'
-  cp_dtbDate.style.backgroundColor = $24dp
+  cp_dtbDate.style.backgroundColor = 'transparent'
   cp_dtbDate.style.borderWidth = '0px'
 }
 
 const period = document.getElementsByClassName('Period')
 for (elt of period) {
   elt.style['color'] = textColor
+}
+
+const calimg = document.getElementsByClassName('CalImg')
+for (elt of calimg) {
+  elt.style['padding-left'] = '5px'
 }
 
 const ttdatatable = document.getElementsByClassName('tt data-table')
