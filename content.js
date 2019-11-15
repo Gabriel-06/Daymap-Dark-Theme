@@ -66,11 +66,45 @@ function frameLoad() {
     addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('body {color: ' + errorColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important; font-size: 14px !important;}')
     addFrameCss('a {color: ' + primary + ' !important;}')
+    addFrameCss('textarea {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: none !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
 
 
   } else {
     setTimeout(frameLoad, 50)
+  }
+  if (document.getElementsByClassName('dlgContent')[1] != null) {
+    if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head == firstLoad) {
+      setTimeout(frameLoad, 100)
+      return
+    }
+    if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
+      addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
+      addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+      addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+      addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+      addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
+      addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
+      addFrameCss('.btn:hover {box-shadow: none !important;}')
+      addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+      addFrameCss('div {border-width: 0px !important;}')
+      addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
+      addFrameCss('.Caption {color: ' + textColor + ' !important;}')
+      addFrameCss('.CaptionR {color: ' + textColor + ' !important;}')
+      addFrameCss('.threadR {background-color: ' + $12dp + ' !important;}')
+      addFrameCss('.threadL {background-color: ' + $12dp + ' !important;}')
+      addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important; border-radius: 3px !important;}')
+      addFrameCss('p {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+      addFrameCss('span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+      addFrameCss('div.ErrMsg {background-color: ' + $6dp + ' !important; color: ' + errorColor + ' !important;}')
+      addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
+      addFrameCss('body {color: ' + errorColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important; font-size: 14px !important;}')
+      addFrameCss('a {color: ' + primary + ' !important;}')
+      addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: none !important;}')
+      addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+    } else {
+      setTimeout(frameLoad, 50)
+    }
   }
 }
 
@@ -85,22 +119,24 @@ function addFrameCss(rule) {
 
 var firstLoad
 const observer = new MutationObserver(function(mutations) {
-  if (mutations[1] != null) {
-    if (mutations[1].addedNodes.length)
+  if (mutations[1] != null || mutations[5] != null) {
+    if (mutations[1].addedNodes.length || mutations[5].addedNodes.length)
       if (document.getElementsByClassName('dlgContent')[0] != null) {
         if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0] != null) {
           firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
           frameLoad()
         }
       }
+
       if (document.getElementsByClassName('dlgContent')[1] != null) {
         if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0] != null) {
           firstLoad = document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head
           frameLoad()
         }
       }
+    }
   }
-})
+)
 const bears = document.querySelector('body#mainBody')
 observer.observe(bears, {
   childList: true,
@@ -575,8 +611,7 @@ addCss('tr.msgHead td.sn {color: ' + textColor + ' !important;}')
 
 addCss('#folder_page a {color: ' + textColor + ' !important;}')
 
-addCss('div.msgSelected {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
-  ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
+addCss('div.msgSelected {background-color: #595858 !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
 
 addCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
 
@@ -778,3 +813,29 @@ addCss('#ddlTerms {background-color: ' + $12dp + ' !important; border-width: 0px
 addCss('#ddlColourBy {background-color: ' + $12dp + ' !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
 
 addCss('.msgBody span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica !important;}')
+
+addCss('.content-main-header {background-color: ' + primaryDark + ' !important;}')
+
+addCss('.landing-menu > .menu .menu-content .card {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+
+addCss('.landing-menu .navigator a {color: ' + textColor + ' !important;}')
+
+addCss('.landing-menu > .menu .top-menu {background-color: ' + $6dp + ' !important; border-color: ' + primaryDark + ' !important;}')
+
+addCss('.landing-menu > .menu .top-menu .menu-item span {color: ' + textColor + ' !important;}')
+
+addCss('.landing-menu > .menu .top-menu .menu-item:hover, .landing-menu > .menu .top-menu .menu-item.is-active {background-color: ' + primaryDark + ' !important;}')
+
+addCss('.header .header-logo .landing-button:hover, .header .header-logo .landing-button.landing-open {background-color: ' + primaryDark + ' !important; box-shadow: none !important;}')
+
+addCss('.landing-menu > .menu .menu-content .layout .left > .card:hover {color: ' + textColor + ' !important;}')
+
+addCss('.landing-menu > .menu .menu-content .card:hover {box-shadow: none !important;}')
+
+addCss('.landing-menu .navigator a:hover {background-color: ' + primaryDark + ' !important;}')
+
+addCss('.landing-menu > .menu .menu-content .layout .left > .card:hover h2 {padding-left: 5px !important; padding-right: 5px !important; background-color: ' + primaryDark + ' !important;}')
+
+addCss('.legend {color: ' + textColor + ' !important;}')
+
+addCss('div.sched table th {border: 0px solid #106584 !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
