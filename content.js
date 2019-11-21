@@ -66,7 +66,9 @@ function frameLoad() {
     addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('body {color: ' + errorColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important; font-size: 14px !important;}')
     addFrameCss('a {color: ' + primary + ' !important;}')
-    addFrameCss('textarea {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: none !important;}')
+    addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('input:not([type="button"]) {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-radius: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('input[type=button] {border-radius: 3px !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
 
 
@@ -669,7 +671,7 @@ addCss('td.PlanClass {color: ' + textColor + ' !important; border-top: solid 1px
 
 addCss('a.PlanClass {color: ' + textColor + ' !important;}')
 
-addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important}')
+addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important;}')
 
 addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
 
@@ -721,7 +723,9 @@ addCss('table.dtp:hover {background-color: transparent !important; border-radius
 
 addCss('#ddlClass {color: ' + textColor + ' !important; background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
 
-addCss('#divTimetable div:not(.Badge):not(.PlanClass):not(.PlanEvent):not(.lpTitle):not(.Caption):not(.cap):not(.Header) {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+addCss('#divTimetable div:not(.Badge):not(.PlanClass):not(.PlanEvent):not(.lpTitle):not(.Caption):not(.cap):not(.Header) {background-color: ' + $6dp + ' !important; border-radius: 3px !important;}')
+
+addCss('#divTimetable td {box-shadow: ' + $4dp_shadow + ' !important;}')
 
 addCss('.PlanEvent {background-color: ' + primaryDark + ' !important;}')
 
@@ -735,7 +739,7 @@ addCss('table.GRID_STYLE th, table.rgGroupPanel th, table.publishoptions th, tab
 
 addCss('.agHeader {background-color: ' + primaryDark + ' !important;}')
 
-addCss('.AttendanceMap {background-color: ' + primaryDark + ' !important; border-top: solid 0px #249FD9 !important; border-left: solid 0px #249FD9 !important; border-bottom: solid 0px #249FD9 !important; border-right: solid 0px #249FD9 !important;}')
+addCss('.AttendanceMap {background-color: ' + $1dp + ' !important; border-top: solid 0px #249FD9 !important; border-left: solid 0px #249FD9 !important; border-bottom: solid 0px #249FD9 !important; border-right: solid 0px #249FD9 !important;}')
 
 addCss('h2, div.Header {color: ' + textColor + ' !important;}')
 
@@ -844,3 +848,57 @@ addCss('.landing-menu > .menu .menu-content .layout .left > .card:hover h2 {padd
 addCss('.legend {color: ' + textColor + ' !important;}')
 
 addCss('div.sched table th {border: 0px solid #106584 !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
+
+addCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+
+addCss('.WhiteBox span {color: ' + textColor + ' !important;')
+
+addCss('#cp_cp_divResults div {border-width: 0px !important;}')
+
+addCss('select {background-color: ' + $12dp + ' !important; border-radius: 3px !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
+
+addCss('.RadScheduler_Metro .rsHeader {background-color: ' + primaryDark + ' !important;}')
+
+addCss('.rsApt {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
+
+addCss('.rsDateHeader {color: ' + textColor + ' !important;}')
+
+addCss('.RadScheduler_Metro .rsHorizontalHeaderTable th {border-width: 0px !important; background-color: ' + $6dp + ' !important;}')
+
+addCss('.rsAllDayRow {background-color: ' + $24dp + ' !important;}')
+
+addCss('.rsContentScrollArea {background-color: ' + $6dp + ' !important;}')
+
+addCss('.rsContentScrollArea td {border-color: #595858 !important;}')
+
+addCss('.rsAlt {background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+
+addCss('.rsVerticalHeaderTable th {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important;}')
+
+addCss('.rsSpacerCell {background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+
+addCss('.rsAllDayHeader {background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+
+addCss('.rsFooter {background-color: ' + $6dp + ' !important; border-width: 0px !important;}')
+
+addCss('.rsAptOut {border-width: 1px !important; border-color: ' + primary + ' !important;}')
+
+addCss('.rsApt {border-width: 1px !important; border-color: ' + primary + ' !important;}')
+
+addCss('.rsContent {border-width: 0px !important; background-color: ' + $6dp + ' !important;}')
+
+addCss('.RadScheduler .rsVerticalHeaderWrapper div {margin-left: 0px !important;}')
+
+addCss('.rsAllDayRow td {border-color: #595858 !important;}')
+
+addCss('.rcMainTable {background-color: ' + $6dp + ' !important;}')
+
+addCss('.rcWeek th {color: ' + textColor + ' !important;}')
+
+addCss('.RadCalendar_Metro .rcRow td {border-color: ' + $24dp + ' !important;}')
+
+addCss('.RadCalendarMonthView_Metro input {color: ' + textColor + ' !important;}')
+
+addCss('.RadCalendarMonthView_Metro .rcSelected a {background-color: ' + primaryDark + ' !important;}')
+
+addCss('.my-calendar-list tr td:first-child {color: ' + darkTextColor + ' !important;}')
