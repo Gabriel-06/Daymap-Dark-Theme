@@ -1,9 +1,3 @@
-/* TODO:
-
-hyperlinks
-attendence colors
-*/
-
 const $0dp = '#121212'
 const $1dp = '#1d1d1d'
 const $2dp = '#212020'
