@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Daymap Dark Theme",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Adds a dark theme to the LMS DayMap used by South Australian public schools.",
   "icons": {
     "16": "DDT_Icons/DDT_16px.png",

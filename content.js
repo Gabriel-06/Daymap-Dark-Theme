@@ -40,7 +40,7 @@ function frameLoad() {
   }
   if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
     addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
-    addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.msgBody {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important;}')
     addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
     addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
@@ -60,7 +60,7 @@ function frameLoad() {
     addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('body {color: ' + errorColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important; font-size: 14px !important;}')
     addFrameCss('a {color: ' + primary + ' !important;}')
-    addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important;}')
     addFrameCss('input:not([type="button"]) {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-radius: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
     addFrameCss('input[type=button] {border-radius: 3px !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
     addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
@@ -687,7 +687,7 @@ addCss('.mobile-menu-list > div a:focus, .mobile-menu-list > div a.selected {col
 
 addCss('.mobile-menu-list > div a.menu-parent {background-color: ' + $12dp + ' !important;}')
 
-addCss('.ui-icon{background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
+addCss('.ui-icon :not(ui-icon-circle-triangle-e) {background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
 
 addCss('table.tt th { background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
 
@@ -795,7 +795,7 @@ addCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !im
 
 addCss('#cp_dtbDate {vertical-align: middle !important; box-shadow: none !important;}')
 
-addCss('.CalImg {vertical-align: middle !important}')
+addCss('.CalImg {vertical-align: middle !important; content:url(https://i.ibb.co/m6Sg4dc/calendar.png);}')
 
 addCss('.selected {border-width: 0px !important; background-color: ' + $24dp + ' !important; border-radius: 3px !important;}')
 
@@ -849,7 +849,7 @@ addCss('.WhiteBox span {color: ' + textColor + ' !important;')
 
 addCss('#cp_cp_divResults div {border-width: 0px !important;}')
 
-addCss('select {background-color: ' + $12dp + ' !important; border-radius: 3px !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
+addCss('select :not(.ui-datepicker-year) {background-color: ' + $12dp + ' !important; border-radius: 3px !important; border-width: 0px !important; color: ' + textColor + ' !important;}')
 
 addCss('.RadScheduler_Metro .rsHeader {background-color: ' + primaryDark + ' !important;}')
 
@@ -896,3 +896,9 @@ addCss('.RadCalendarMonthView_Metro input {color: ' + textColor + ' !important;}
 addCss('.RadCalendarMonthView_Metro .rcSelected a {background-color: ' + primaryDark + ' !important;}')
 
 addCss('.my-calendar-list tr td:first-child {color: ' + darkTextColor + ' !important;}')
+
+addCss('tr.msgHead td.msgNew {color: ' + primaryDark + ' !important;}')
+
+addCss('table.tt td.Label {color: ' + textColor + ' !important;}')
+
+addCss('select.ui-datepicker-year {color: ' + primaryDark + ' !important;}')
