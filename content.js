@@ -902,3 +902,9 @@ addCss('tr.msgHead td.msgNew {color: ' + primaryDark + ' !important;}')
 addCss('table.tt td.Label {color: ' + textColor + ' !important;}')
 
 addCss('select.ui-datepicker-year {color: ' + primaryDark + ' !important;}')
+
+addCss('.menuContainer div.lpMenu table.lpMenu {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-color: ' + primaryDark + ' !important;}')
+
+addCss('.menuContainer div.lpMenu table.lpMenu tr .lpMenuTd2 {border-left: 2px solid ' + primary + ' !important;}')
+
+addCss('.lpMenuTd3 img {content:url(https://i.ibb.co/x6nQFLx/arrow-right.gif) !important;')
