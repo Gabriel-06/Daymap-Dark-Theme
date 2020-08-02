@@ -69,6 +69,30 @@ function frameLoad() {
     addFrameCss('.TabsCnt > tbody > tr > td:first-child {border-right: 0px solid #d2d2d2 !important;}')
     addFrameCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + primaryDark + ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
     addFrameCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primaryDark + ' !important; background-color: ' + $6dp + ' !important;}')
+    addFrameCss('.menuContainer div.lpMenu table.lpMenu {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-color: ' + primaryDark + ' !important;}')
+    addFrameCss('.menuContainer div.lpMenu table.lpMenu tr .lpMenuTd2 {border-left: 2px solid ' + primary + ' !important;}')
+    addFrameCss('h2, div.header {color: ' + textColor + ' !important;}')
+    addFrameCss('.header .header-logo .landing-button:hover, .header .header-logo .landing-button.landing-open {background-color: ' + primaryDark + ' !important; box-shadow: none !important;}')
+    addFrameCss('.header {color: ' + textColor + ' !important; background-color: ' + $1dp + ' !important; border-width: 0px !important; box-shadow: none !important;}')
+    addFrameCss('.menuContainer .lpMenuTop td {background-color: ' + $1dp + ' !important; color: ' + textColor + ' !important; border-bottom: none !important;}')
+    addFrameCss('.menuContainer .lpMenuTop:hover td {color: ' + textColor + ' !important;}')
+    addFrameCss('.notification {color: ' + textColor + ' !important;}')
+    addFrameCss('i {color: ' + textColor + ' !important;}')
+    addFrameCss('.post-ticker {box-shadow: none !important; background-color: ' + primaryDark + ' !important;}')
+    addFrameCss('.atooltip {color: ' + textColor + ' !important;}')
+    addFrameCss('.SearchHeader {color: ' + textColor + ' !important;}')
+    addFrameCss('div.msgQuote {background-color: ' + $6dp + ' !important; border-color: ' + primaryDark + ' !important;}')
+
+    addFrameCss('.icon img {content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
+    addFrameCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
+    addFrameCss('.sn img { content:url(https://i.ibb.co/Vq43b1g/attachment.png) !important;}')
+    addFrameCss('div.lpHead img { content:url(https://i.ibb.co/xL9vZvt/class-post.png) !important;}')
+    addFrameCss('.ui-icon :not(ui-icon-circle-triangle-e) {background-image:url("https://i.ibb.co/xDQcRQZ/ui-icons.png") !important;}')
+    addFrameCss('.PlanEvent img {content:url(https://i.ibb.co/NYbz8HJ/calendar-x05.png) !important;}')
+    addFrameCss('.date-picker img {content:url(https://i.ibb.co/m6Sg4dc/calendar.png) !important;')
+    addFrameCss('.CalImg {vertical-align: middle !important; content:url(https://i.ibb.co/m6Sg4dc/calendar.png);}')
+    addFrameCss('.lpMenuTd3 img {content:url(https://i.ibb.co/x6nQFLx/arrow-right.gif) !important;')
+
 
   } else {
     setTimeout(frameLoad, 50)
@@ -204,12 +228,6 @@ const caption = document.getElementsByClassName('Caption')
 for (elt of caption) {
   elt.style['color'] = textColor
   elt.style['padding-top'] = '0px'
-}
-
-const header = document.getElementsByClassName('Header')
-for (elt of header) {
-  elt.style['color'] = textColor
-  elt.style['background-color'] = 'transparent'
 }
 
 const cap = document.getElementsByClassName('cap')
@@ -754,7 +772,7 @@ addCss('div.msgReplies {border-bottom: 0px solid #D8CA95 !important; color: ' + 
 
 addCss('div.msgSender {color: ' + primary + ' !important;}')
 
-addCss('div.lpAll {background-color: ' + $6dp + ' !important; border: solid 0px #F1F5FB !important;}')
+addCss('div.lpAll {background-color: ' + $6dp + ' !important; border: solid 0px #F1F5FB !important; color: ' + textColor + ' !important;}')
 
 addCss('#divUserAvatarMobile {border: 2px solid #fff !important;}')
 
@@ -909,3 +927,11 @@ addCss('.menuContainer div.lpMenu table.lpMenu {background-color: ' + $12dp + ' 
 addCss('.menuContainer div.lpMenu table.lpMenu tr .lpMenuTd2 {border-left: 2px solid ' + primary + ' !important;}')
 
 addCss('.lpMenuTd3 img {content:url(https://i.ibb.co/x6nQFLx/arrow-right.gif) !important;')
+
+addCss('.msgPostItem {background-color: ' + $1dp + ' !important; border: none !important}')
+
+addCss('.Header14 {color: ' + primary + ' !important;}')
+
+addCss('.filter {color: ' + textColor + ' !important;}')
+
+addCss('div.msgQuote {background-color: ' + $6dp + ' !important; border-color: ' + primaryDark + ' !important;}')
