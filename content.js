@@ -41,12 +41,12 @@ function frameLoad() {
   if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
     addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('.msgBody {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important;}')
-    addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
     addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
     addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
     addFrameCss('.btn:hover {box-shadow: none !important;}')
-    addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
     addFrameCss('div {border-width: 0px !important;}')
     addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
     addFrameCss('.Caption {color: ' + textColor + ' !important;}')
@@ -59,10 +59,10 @@ function frameLoad() {
     addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
     addFrameCss('a {color: ' + primaryDark + ' !important;}')
     addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important;}')
-    addFrameCss('input:not([type="button"]) {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-radius: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+    addFrameCss('input:not([type="button"]) {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-radius: 3px !important; box-shadow: none !important;}')
     addFrameCss('input[type=button] {border-radius: 3px !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('body {background-color:' + $0dp + ' !important;}')
-    addFrameCss('.card {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
+    addFrameCss('.card {background-color: ' + $1dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
     addFrameCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
     addFrameCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primaryDark +
       ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
@@ -82,6 +82,34 @@ function frameLoad() {
     addFrameCss('.atooltip {color: ' + textColor + ' !important;}')
     addFrameCss('.SearchHeader {color: ' + textColor + ' !important;}')
     addFrameCss('div.msgQuote {background-color: ' + $6dp + ' !important; border-color: ' + primaryDark + ' !important;}')
+    addFrameCss('div.headw {background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
+    addFrameCss('.TabsCnt .tabList > div > a, { border-left: 3px solid transparent; border-bottom: 1px solid transparent; border-top: 1px solid transparent; }')
+    addFrameCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open { border-left: 3px solid ' + primaryDark +
+      ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
+    addFrameCss('.TabsCnt > tbody > tr > td:first-child {border-right: 0px solid #d2d2d2 !important;}')
+    addFrameCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + primaryDark + ' !important; border-bottom: 0px solid #d2d2d2 !important; border-top: 0px solid #d2d2d2 !important;}')
+    addFrameCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primaryDark + ' !important; background-color: ' + $6dp + ' !important;}')
+    addFrameCss('.TabsCnt .tabList > div > a {background-color: ' + $12dp + ' !important; border-radius: 3px !important;}')
+    addFrameCss('.TabsCnt .tabList > div > a.selected, .TabsCnt .tabList > div > a.open {border-radius: 3px !important;')
+    addFrameCss('.TabsCnt > tbody > tr > td.Left {background-color: ' + $1dp + ' !important; border-width: none !important;}')
+    addFrameCss('a {color: ' + textColor + ' !important;}')
+    addFrameCss('.TabsCnt .tabPage, .TabsCnt .tabPageW {background-color: ' + $1dp + ' !important;}')
+    addFrameCss('.TabsCnt {border-width: 0px !important;}')
+    addFrameCss('.lpHead {background-color: ' + $12dp + ' !important;}')
+    addFrameCss('div.lpHead {color: ' + textColor + ' !important;}')
+    addFrameCss('div.tabContentW {background-color: ' + $6dp + ' !important; box-shadow: none !important;}')
+    addFrameCss('table.feed td div.detail {color: ' + textColor + ' !important;}')
+    addFrameCss('table.feed td.selected {background-color: ' + $24dp + ' !important; border-width: 0px !important;}')
+    addFrameCss('.fLinkDiv {color: ' + textColor + ' !important; background-color: ' + $12dp +' !important; padding: 8px !important;}')
+    addFrameCss('.lpTitle {color: ' + textColor + ' !important;}')
+    addFrameCss('table.feed div.head {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
+    addFrameCss('div.SearchBox {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: #CDDAEA 0px solid !important; border-radius: 3px !important; drop-shadow: none !important;}')
+    addFrameCss('div.msgPostItem {background-color: ' + $12dp + ' !important;}')
+    addFrameCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: none !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
+    addFrameCss('table.feed td div.cap {color: ' + textColor + ' !important;}')
+    addFrameCss('table.feed td.itm {color: ' + textColor + ' !important;}')
+    addFrameCss('table.feed div.head {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
+
 
     addFrameCss('.icon img {content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
     addFrameCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
@@ -104,13 +132,13 @@ function frameLoad() {
     }
     if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
       addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
-      addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
-      addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+      addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
+      addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
       addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
       addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
       addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
       addFrameCss('.btn:hover {box-shadow: none !important;}')
-      addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+      addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
       addFrameCss('div {border-width: 0px !important;}')
       addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
       addFrameCss('.Caption {color: ' + textColor + ' !important;}')
@@ -185,7 +213,7 @@ for (elt of card) {
   elt.style['background-color'] = $1dp
   elt.style['border-width'] = '0px'
   elt.style['padding-left'] = '10px'
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const ddlWeekbutton = document.getElementById('ddlWeek-button')
@@ -198,14 +226,14 @@ for (elt of toolbar) {
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const msgunread = document.getElementsByClassName('msg unread')
 for (elt of msgunread) {
   elt.style['color'] = textColor
   elt.style['background-color'] = $1dp
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const text = document.getElementsByTagName('a')
@@ -251,7 +279,7 @@ for (elt of headerr) {
   elt.style['color'] = textColor
   elt.style['background-color'] = $1dp
   elt.style['border-color'] = '#535353'
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
 }
 
@@ -302,13 +330,13 @@ const photothumb = document.getElementsByClassName('photoThumb')
 for (elt of photothumb) {
   elt.style['border-radius'] = '4px'
   elt.style['padding-right'] = '50px'
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const week = document.getElementsByClassName('CE ditm')
 for (elt of week) {
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $4dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-radius'] = '3px'
   elt.style['border-color'] = primaryDark
 }
@@ -318,7 +346,7 @@ for (elt of timetable) {
   elt.style['border-color'] = primaryDark
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const btn = document.getElementsByClassName('btn')
@@ -378,23 +406,23 @@ for (elt of planclass_bg) {
 const table_row_group = document.getElementsByClassName('rgGroupHeader')
 for (elt of table_row_group) {
   elt.style['background-color'] = $24dp
-  elt.style['box-shadow'] = $24dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const rgroupitem = document.getElementsByClassName('rgGroupItem')
 for (elt of rgroupitem) {
   elt.style['border-radius'] = '4px'
-  elt.style['box-shadow'] = $3dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const rgmaster = document.getElementById('cp_cp_grdAssignments_ctl00')
 if (rgmaster != null) {
-  rgmaster.style.boxShadow = $1dp_shadow
+  rgmaster.style.boxShadow = 'none'
 }
 
 const ddlView = document.getElementById('ddlView')
 if (ddlView != null) {
-  ddlView.style.boxShadow = $1dp_shadow
+  ddlView.style.boxShadow = 'none'
   ddlView.style.borderWidth = '0px'
   ddlView.style.backgroundColor = $24dp
   ddlView.style.color = '#FFF'
@@ -404,13 +432,13 @@ if (ddlView != null) {
 const table_row = document.getElementsByClassName('rgRow')
 for (elt of table_row) {
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const table_row_alt = document.getElementsByClassName('rgAltRow')
 for (elt of table_row_alt) {
   elt.style['background-color'] = $3dp
-  elt.style['box-shadow'] = $3dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const table_header = document.getElementsByClassName('rgHeader')
@@ -424,7 +452,7 @@ for (elt of tasks) {
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['color'] = textColor
 }
 
@@ -433,7 +461,7 @@ for (elt of itm) {
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const lp = document.getElementsByClassName('lp')
@@ -459,7 +487,7 @@ const tabContentW = document.getElementsByClassName('tabContentW')
 for (elt of tabContentW) {
   elt.style['border-width'] = '0px'
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-radius'] = '4px'
 }
 
@@ -482,14 +510,14 @@ for (elt of ui_stuff) {
 const box = document.getElementsByClassName('Box')
 for (elt of box) {
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
 }
 
 const tabsCnt = document.getElementsByClassName('TabsCnt')
 for (elt of tabsCnt) {
   elt.style['background-color'] = $1dp
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
 }
 
@@ -543,7 +571,7 @@ for (elt of calimg) {
 const ttdatatable = document.getElementsByClassName('tt data-table')
 for (elt of ttdatatable) {
   elt.style['backgroundColor'] = $8dp
-  elt.style['box-shadow'] = $2dp_shadow
+  elt.style['box-shadow'] = 'none'
 }
 
 const tblTt = document.getElementById('tblTt')
@@ -559,7 +587,7 @@ if (tblTt != null) {
 const msgFolderList = document.getElementsByClassName('msgFolderList')
 for (elt of msgFolderList) {
   elt.style['background-color'] = $1dp
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
 }
@@ -567,7 +595,7 @@ for (elt of msgFolderList) {
 const msgBox = document.getElementsByClassName('msgBox')
 for (elt of msgBox) {
   elt.style['background-color'] = $1dp
-  elt.style['box-shadow'] = $1dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
 }
@@ -575,7 +603,7 @@ for (elt of msgBox) {
 const msgBody = document.getElementsByClassName('msgBody')
 for (elt of msgBody) {
   elt.style['background-color'] = $6dp
-  elt.style['box-shadow'] = $6dp_shadow
+  elt.style['box-shadow'] = 'none'
   elt.style['border-width'] = '0px'
   elt.style['border-radius'] = '3px'
 }
@@ -588,7 +616,7 @@ for (elt of rgGroupItem) {
 const divDiaryDay = document.getElementById('divDiaryDay')
 if (divDiaryDay != null) {
   divDiaryDay.style['background-color'] = $6dp
-  divDiaryDay.style['box-shadow'] = $4dp_shadow
+  divDiaryDay.style['box-shadow'] = 'none'
   divDiaryDay.style['border-radius'] = '3px'
   divDiaryDay.style['margin-top'] = '20px'
 }
@@ -624,8 +652,7 @@ addCss('div.msgBody {border: 0px solid #8DAED9 !important; background-color: ' +
 
 addCss('body.Dialog {background-color: #ad4d4d !important;}')
 
-addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: ' + $6dp_shadow +
-  ' !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
+addCss('div.msg {background-color: ' + $6dp + ' !important; box-shadow: none !important; border-width: 0px !important; border-radius: 3px !important; color: ' + textColor + ' !important;}')
 
 addCss('tr.msgHead td.sn {color: ' + textColor + ' !important;}')
 
@@ -646,13 +673,13 @@ addCss('.TabsCnt .tabList > div a.child.selected {border-left: 2px solid ' + pri
 
 addCss('.TabsCnt .tabList > div > div {border-bottom: 0px solid ' + primaryDark + ' !important; background-color: ' + $6dp + ' !important;}')
 
-addCss('div.fbox { background-color: ' + $6dp + ' !important; border: 0px solid #F1F5FB !important; padding: 2px !important; margin: 5px !important; box-shadow: ' + $4dp_shadow + ' !important}')
+addCss('div.fbox { background-color: ' + $6dp + ' !important; border: 0px solid #F1F5FB !important; padding: 2px !important; margin: 5px !important; box-shadow: none !important}')
 
-addCss('div.tabContentW {background-color: ' + $6dp + ' !important; box-shadow: ' + $4dp_shadow + ' !important;}')
+addCss('div.tabContentW {background-color: ' + $6dp + ' !important; box-shadow: none !important;}')
 
 addCss('table.feed td.itm {color: ' + textColor + ' !important;}')
 
-addCss('table.feed div.head {background-color: ' + primaryDark + ' !important;}')
+addCss('table.feed div.head {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
 addCss('.Caption, .CaptionR8 {color: ' + textColor + ' !important;}')
 
@@ -660,9 +687,9 @@ addCss('.Error {color: ' + errorColor + ' !important;}')
 
 addCss('td.diaryEvents {background-color: ' + $1dp + ' !important; border-bottom: 3px solid ' + primaryDark + ' !important;}')
 
-addCss('div.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; border-radius: 3px; box-shadow: ' + $1dp_shadow + ' !important;}')
+addCss('div.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; border-radius: 3px; box-shadow: none !important;}')
 
-addCss('td.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; box-shadow: ' + $1dp_shadow + ' !important; color: ' + textColor + ' !important;}')
+addCss('td.diaryDay {background-color: ' + primaryDark + ' !important; border-width: 0px !important; box-shadow: none !important; color: ' + textColor + ' !important;}')
 
 addCss('td.diaryDay:hover { background-color: ' + primaryDark + ' !important; border-radius: 3px !important;}')
 
@@ -684,9 +711,9 @@ addCss('td.PlanClass {color: ' + textColor + ' !important; border-top: solid 1px
 
 addCss('a.PlanClass {color: ' + textColor + ' !important;}')
 
-addCss('div.lp {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important;}')
+addCss('div.lp {background-color: ' + $1dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important;}')
 
-addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+addCss('div.lpHead {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important; border: solid 0px #efeeee !important; box-shadow: none !important; border-radius: 3px !important;}')
 
 addCss('td.PlanDay {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
@@ -738,7 +765,7 @@ addCss('#ddlClass {color: ' + textColor + ' !important; background-color: ' + $6
 
 addCss('#divTimetable div:not(.Badge):not(.PlanClass):not(.PlanEvent):not(.lpTitle):not(.Caption):not(.cap):not(.Header) {background-color: ' + $6dp + ' !important; border-radius: 3px !important;}')
 
-addCss('#divTimetable td {box-shadow: ' + $4dp_shadow + ' !important;}')
+addCss('#divTimetable td {box-shadow: none !important;}')
 
 addCss('.PlanEvent {background-color: ' + primaryDark + ' !important;}')
 
@@ -824,7 +851,7 @@ addCss('div.dlgContent {border: #CDDAEA 0px solid !important; background-color: 
 
 addCss('div.lblsaved {color: ' + textColor + ' !important;}')
 
-addCss('div.fld {BORDER-bottom: #ececec 0px solid !important; background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; box-shadow: ' + $4dp_shadow + ' !important; border-radius: 3px !important;}')
+addCss('div.fld {BORDER-bottom: #ececec 0px solid !important; background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; box-shadow: none !important; border-radius: 3px !important;}')
 
 addCss('.cap {color: ' + textColor + ' !important;}')
 
@@ -862,7 +889,7 @@ addCss('.legend {color: ' + textColor + ' !important;}')
 
 addCss('div.sched table th {border: 0px solid #106584 !important; background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
-addCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: ' + $6dp_shadow + ' !important;}')
+addCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
 
 addCss('.WhiteBox span {color: ' + textColor + ' !important;')
 
