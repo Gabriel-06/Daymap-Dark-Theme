@@ -13,7 +13,7 @@
     "matches": [
       "*://*.sa.edu.au/*ay*ap/*"
     ],
-    "js": ["content.js"]
+    "js": ["content.min.js"]
   }],
   "author": "Yuehan Xia and Gabriel Csizmadia",
   "short_name": "DDT"

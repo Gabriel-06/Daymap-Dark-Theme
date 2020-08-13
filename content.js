@@ -110,6 +110,10 @@ function frameLoad() {
     addFrameCss('table.feed td.itm {color: ' + textColor + ' !important;}')
     addFrameCss('table.feed div.head {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
 
+    addFrameCss('table.GRID_STYLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
+    addFrameCss('table.GRID_STYLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(even) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
+    addFrameCss('table.GRID_STYLE th, table.rgGroupPanel th, table.publishoptions th, table.published_main th, table.rgMasterTable th, table.data-table th, table.dataTable th, table.Report th, table.SORTTABLE th {background-color: ' + primaryDark + ' !important;}')
+    addFrameCss('table.Report {color: ' + textColor + ' !important;}')
 
     addFrameCss('.icon img {content:url(https://i.ibb.co/LxXS7Jp/chat.png) !important;}')
     addFrameCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
@@ -124,36 +128,6 @@ function frameLoad() {
 
   } else {
     setTimeout(frameLoad, 50)
-  }
-  if (document.getElementsByClassName('dlgContent')[1] != null) {
-    if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head == firstLoad) {
-      setTimeout(frameLoad, 100)
-      return
-    }
-    if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
-      addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
-      addFrameCss('.msgBody {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
-      addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
-      addFrameCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
-      addFrameCss('.msgSender {color: ' + primaryDark + ' !important;}')
-      addFrameCss('.btn {background-color: ' + primaryDark + ' !important;}')
-      addFrameCss('.btn:hover {box-shadow: none !important;}')
-      addFrameCss('.WhiteBox {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
-      addFrameCss('div {border-width: 0px !important;}')
-      addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
-      addFrameCss('.Caption {color: ' + textColor + ' !important;}')
-      addFrameCss('.CaptionR {color: ' + textColor + ' !important;}')
-      addFrameCss('.threadR {background-color: ' + $12dp + ' !important;}')
-      addFrameCss('.threadL {background-color: ' + $12dp + ' !important;}')
-      addFrameCss('p {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
-      addFrameCss('span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
-      addFrameCss('li {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
-      addFrameCss('a {color: ' + primary + ' !important;}')
-      addFrameCss('textarea {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-radius: 3px !important; border-width: 0px !important; box-shadow: none !important;}')
-      addCss('.dlgContent {background-color: ' + $6dp + ' !important; border-width: 0px !important; border-radius: 3px !important;}')
-    } else {
-      setTimeout(frameLoad, 50)
-    }
   }
 }
 
@@ -173,13 +147,6 @@ const observer = new MutationObserver(function(mutations) {
       if (document.getElementsByClassName('dlgContent')[0] != null) {
         if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0] != null) {
           firstLoad = document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head
-          frameLoad()
-        }
-      }
-
-      if (document.getElementsByClassName('dlgContent')[1] != null) {
-        if (document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0] != null) {
-          firstLoad = document.getElementsByClassName('dlgContent')[1].getElementsByTagName('iframe')[0].contentWindow.document.head
           frameLoad()
         }
       }
@@ -962,3 +929,5 @@ addCss('.Header14 {color: ' + primary + ' !important;}')
 addCss('.filter {color: ' + textColor + ' !important;}')
 
 addCss('div.msgQuote {background-color: ' + $6dp + ' !important; border-color: ' + primaryDark + ' !important;}')
+
+addCss('.Light {color: ' + textColor + ' !important;}')
