@@ -39,6 +39,7 @@ function frameLoad() {
     return
   }
   if (document.getElementsByClassName('dlgContent')[0].getElementsByTagName('iframe')[0].contentWindow.document.head != null) {
+    addFrameCss('[valign] {background-color: ' + $1dp + ' !important;}')
     addFrameCss('.Dialog {background-color: ' + $6dp + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('.msgBody {background-color: ' + $24dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important;}')
     addFrameCss('.lpAll {background-color: ' + $12dp + ' !important; color: ' + textColor + ' !important; border-width: 0px !important; border-raduis: 3px !important; box-shadow: none !important;}')
@@ -50,7 +51,6 @@ function frameLoad() {
     addFrameCss('div {border-width: 0px !important;}')
     addFrameCss('.CaptionG {color: ' + textColor + ' !important;}')
     addFrameCss('.Caption {color: ' + textColor + ' !important;}')
-    addFrameCss('.CaptionR {color: ' + textColor + ' !important;}')
     addFrameCss('.threadR {background-color: ' + $12dp + ' !important;}')
     addFrameCss('.threadL {background-color: ' + $12dp + ' !important;}')
     addFrameCss('.msgLatest {background-color: ' + errorColor + ' !important; border-radius: 3px !important;}')
@@ -112,9 +112,9 @@ function frameLoad() {
     addFrameCss('.Badge {background-color: ' + primaryDark + ' !important; color: ' + textColor + ' !important;}')
     addFrameCss('table.feed td div.cap {color: ' + textColor + ' !important;}')
     addFrameCss('table.feed td.itm {color: ' + textColor + ' !important;}')
-    addFrameCss('[valign] {background-color: ' + $1dp + ' !important;}')
     addFrameCss('.cap {color: ' + textColor + ' !important;}')
     addFrameCss('.head {color: ' + textColor + ' !important;}')
+    addFrameCss('.CaptionR {color: ' + textColor + ' !important; background-color: transparent !important;}')
 
 
     addFrameCss('table.GRID_STYLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgGroupPanel tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.publishoptions tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.published_main tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.rgMasterTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.data-table tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.dataTable tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.Report tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft), table.SORTTABLE tr:nth-child(odd) td:not(.agNotMarked):not(.agPresent):not(.agNoday):not(.agWeekday):not(.agUnapproved):not(.agLate):not(.agLeft) {background-color: ' + $6dp + ' !important;}')
@@ -616,6 +616,11 @@ addCss('.rgCollapse {background-color: ' + $12dp + ' !important;}')
 
 addCss('.logo {content:url(https://i.ibb.co/SR4c9fT/logo-trans.png) !important;}')
 
+const logo = document.getElementsByClassName('logo')
+for (elt of logo){
+  elt.src = 'https://i.ibb.co/SR4c9fT/logo-trans.png'
+}
+
 addCss('.PlanClass * {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
 addCss('.menuContainter {color: #FF00FF} !important;')
@@ -679,7 +684,7 @@ addCss('div.diary div.ditm {background-color: ' + $6dp + ' !important;}')
 
 addCss('.c a {color: ' + textColor + ' !important;}')
 
-addCss('.sn img { content:url(https://i.ibb.co/Vq43b1g/attachment.png) !important;}')
+addCss('.sn img {content: url(https://i.ibb.co/Vq43b1g/attachment.png);}')
 
 addCss('td.PlanClass {color: ' + textColor + ' !important; border-top: solid 1px ' + primaryDark + ' !important;}')
 
@@ -780,8 +785,6 @@ addCss('#divUserAvatarMobile {border: 2px solid #fff !important;}')
 addCss('.toast-container .toast.info {background-color: ' + primaryDark + ' !important; box-shadow: none !important; }')
 
 addCss('.toast-container .toast.info .toast-icon {background-color: ' + primaryDark + ' !important; }')
-
-addCss('.CaptionR {color: ' + textColor + ' !important;}')
 
 addCss('.lpAll p span {color: ' + textColor + ' !important; font-family: "Roboto", "Helvetica Neue",Helvetica,Arial,sans-serif !important;}')
 
